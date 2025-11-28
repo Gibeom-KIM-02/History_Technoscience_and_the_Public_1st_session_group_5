@@ -1,0 +1,547 @@
+﻿sample_id,thread_id,role,order_in_thread,policy,decision,short_reason,tone_score,debate_value_score
+1,1,post,0,A,WARN_AND_ALLOW,"강한 비판이지만 특정 인물에 대한 직접적인 모욕이 아니며, 시스템이나 정책에 대한 비판으로 판단됨.",3,2
+1,1,post,0,B,WARN_AND_ALLOW,"강한 표현이지만 특정 개인에 대한 직접적인 공격이 아니고, 시스템이나 상황에 대한 비판임.",3,2
+1,1,post,0,C,ALLOW,"명확한 위협이나 혐오 표현이 없으며, 자유로운 비판 표현으로 판단됨.",3,2
+2,1,comment,1,A,ALLOW,"단어 자체가 무례하거나 공격적이지 않고, 인신공격이나 혐오 표현이 없음.",2,1
+2,1,comment,1,B,ALLOW,"비판적 표현이나 욕설이 없으며, 토론에 기여하는 내용은 적지만 무해함.",2,1
+2,1,comment,1,C,ALLOW,표현의 자유 범위 내에서 무례하거나 혐오적이지 않은 단어임.,2,1
+3,1,comment,2,A,ALLOW,The comment is neutral and polite with no insults or criticism.,1,1
+3,1,comment,2,B,ALLOW,The comment contains no personal attacks or hate speech and does not contribute to debate.,1,1
+3,1,comment,2,C,ALLOW,The comment is neutral and does not violate any rules regarding threats or hate speech.,1,1
+4,2,post,0,A,ALLOW,"The comment is a neutral, factual statement without insults or offensive language.",1,2
+4,2,post,0,B,ALLOW,"No personal attacks, hate speech, or threats; comment shares an experience relevant to a policy issue.",1,3
+4,2,post,0,C,ALLOW,"The comment contains no threats, hate speech, or targeted insults and is allowed under minimal regulation.",1,3
+5,2,comment,1,A,ALLOW,The comment is a neutral observation without insults or derogatory language.,2,2
+5,2,comment,1,B,ALLOW,"The comment is a mild, neutral statement contributing to discussion without profanity or personal attack.",2,2
+5,2,comment,1,C,ALLOW,"The comment is a neutral remark with no insults, threats, or hate speech.",2,2
+6,2,comment,2,A,ALLOW,"The comment is neutral and does not contain insults, profanity, or targeted criticism.",1,1
+6,2,comment,2,B,ALLOW,"The comment is neutral and does not contain personal attacks, hate speech, or threats.",1,1
+6,2,comment,2,C,ALLOW,"The comment is neutral and does not violate any rules regarding insults, threats, or hate speech.",1,1
+7,2,comment,3,A,ALLOW,"No direct insult, profanity, or hate speech detected; comment is a casual expression without targeting individuals.",2,2
+7,2,comment,3,B,ALLOW,"Comment is a mild, informal expression without personal attacks or hate speech, contributing lightly to discussion.",2,2
+7,2,comment,3,C,ALLOW,"No threats, hate speech, or targeted insults; casual and informal comment allowed under minimal regulation.",2,2
+8,2,comment,4,A,ALLOW,"The comment is a casual question without insults, profanity, or targeted negativity.",2,2
+8,2,comment,4,B,ALLOW,No personal attacks or hate speech; the comment is a mild inquiry related to academic work.,2,2
+8,2,comment,4,C,ALLOW,"The comment contains no threats, hate speech, or severe insults and is allowed under free expression.",2,2
+9,2,comment,5,A,ALLOW,The comment is a neutral metaphor without insult or derogatory tone toward a person or group.,2,3
+9,2,comment,5,B,ALLOW,"The comment is a mild, neutral statement contributing to discussion without personal attack or profanity.",2,3
+9,2,comment,5,C,ALLOW,"The comment is a non-hostile, non-threatening opinion and is allowed under minimal regulation.",2,3
+10,2,comment,6,A,ALLOW,"The comment is a neutral, brief expression without insults or profanity, so it is allowed under high protection policy.",2,2
+10,2,comment,6,B,ALLOW,"The comment is a mild criticism of assessment methods without personal attacks or profanity, so it is allowed.",2,3
+10,2,comment,6,C,ALLOW,"The comment is a simple critical remark without threats or hate speech, so it is allowed under minimal regulation.",2,3
+11,3,post,0,A,ALLOW,The comment is a neutral question without insults or offensive language.,1,2
+11,3,post,0,B,ALLOW,The comment is a neutral inquiry and does not contain insults or hate speech.,1,2
+11,3,post,0,C,ALLOW,The comment is a simple question without any offensive or threatening content.,1,2
+12,3,comment,1,A,ALLOW,The comment is a neutral slang expression indicating curiosity without insult or profanity.,1,1
+12,3,comment,1,B,ALLOW,"The comment is a neutral expression and does not contain insults, profanity, or hate speech.",1,1
+12,3,comment,1,C,ALLOW,The comment is a casual slang phrase expressing curiosity without any offensive content.,1,1
+13,3,comment,2,A,ALLOW,Polite and neutral comment without any insult or harsh language.,1,2
+13,3,comment,2,B,ALLOW,Neutral comment that does not contain insults or hate speech and contributes minimally to discussion.,1,2
+13,3,comment,2,C,ALLOW,"No insults, threats, or hate speech; simple neutral observation.",1,2
+14,3,comment,3,A,ALLOW,"The comment is a brief, neutral expression without insults or profanity.",2,2
+14,3,comment,3,B,ALLOW,The comment is neutral and does not contain personal attacks or hate speech.,2,2
+14,3,comment,3,C,ALLOW,"The comment is a simple statement without threats, insults, or hate speech.",2,2
+15,3,comment,4,A,ALLOW,The comment is a neutral statement without insults or offensive language.,1,2
+15,3,comment,4,B,ALLOW,The comment is a factual or opinion statement without profanity or personal attack.,1,2
+15,3,comment,4,C,ALLOW,"The comment contains no insults, threats, or hate speech and is allowed freely.",1,2
+16,3,comment,5,A,ALLOW,The comment is neutral and polite without any insult or criticism.,1,1
+16,3,comment,5,B,ALLOW,"The comment does not contain insults, hate speech, or threats and is neutral.",1,1
+16,3,comment,5,C,ALLOW,The comment is neutral and does not violate any rules regarding insults or threats.,1,1
+17,3,comment,6,A,ALLOW,The comment is a neutral factual statement without insults or offensive language.,1,2
+17,3,comment,6,B,ALLOW,The comment is a neutral statement contributing factual information without any insults or profanity.,1,2
+17,3,comment,6,C,ALLOW,The comment is a neutral factual remark with no offensive or threatening content.,1,2
+18,3,comment,7,A,ALLOW,The comment contains only numbers with no insulting or inappropriate content.,1,1
+18,3,comment,7,B,ALLOW,"No personal attacks, hate speech, or threats present; comment is neutral.",1,1
+18,3,comment,7,C,ALLOW,"No hostile, hateful, or threatening content detected; comment is neutral.",1,1
+19,4,post,0,A,ALLOW,The comment is a polite question without insults or offensive language.,1,2
+19,4,post,0,B,ALLOW,The comment is a neutral inquiry and contributes to information sharing.,1,2
+19,4,post,0,C,ALLOW,"The comment contains no insults, threats, or hate speech and is a simple question.",1,2
+20,4,comment,1,A,ALLOW,"The comment is neutral and does not contain insults, profanity, or personal attacks.",2,2
+20,4,comment,1,B,ALLOW,"The comment is a mild, neutral expression without personal attacks or hate speech.",2,2
+20,4,comment,1,C,ALLOW,"The comment is a casual remark without threats, insults, or hate speech.",2,2
+21,4,comment,2,A,WARN_AND_ALLOW,"The comment uses a rude expression '괘씸해서' but it targets a system/policy, not a person directly.",3,2
+21,4,comment,2,B,WARN_AND_ALLOW,"Rude expression aimed at a policy or system, no direct personal attack or hate speech.",3,2
+21,4,comment,2,C,ALLOW,Rude but not hateful or threatening; criticism of a policy is allowed under minimal regulation.,3,2
+22,4,comment,3,A,ALLOW,The comment is a neutral observation without insults or derogatory language toward the professor.,2,3
+22,4,comment,3,B,ALLOW,The comment provides a mild critique about the professor's popularity and grading without personal attack or profanity.,2,3
+22,4,comment,3,C,ALLOW,"The comment is a mild, non-hostile observation and does not contain threats or hate speech.",2,3
+23,4,comment,4,A,ALLOW,"Neutral comment without insult or profanity, no personal attack or hate speech.",1,2
+23,4,comment,4,B,ALLOW,"Polite and neutral expression, no direct attack or hate speech.",1,2
+23,4,comment,4,C,ALLOW,"No insults, threats, or hate speech; simple neutral statement.",1,2
+24,4,comment,5,A,ALLOW,"교수님의 성격에 대한 단순 추측이며, 직접적인 모욕이나 비하가 없으므로 허용.",2,2
+24,4,comment,5,B,ALLOW,"개인에 대한 명확한 공격이나 욕설이 없고, 토론 가치가 낮지만 허용 가능.",2,2
+24,4,comment,5,C,ALLOW,비판적 표현이지만 욕설이나 위협이 없으므로 자유롭게 허용.,2,2
+25,4,comment,6,A,ALLOW,The comment is a neutral personal experience without insults or derogatory language.,2,2
+25,4,comment,6,B,ALLOW,"The comment shares a personal experience without direct insults or hate speech, contributing mild information.",2,2
+25,4,comment,6,C,ALLOW,"The comment is a mild, informal expression of frustration without threats or hate speech.",2,2
+26,5,post,0,A,BLOCK,Contains a derogatory slang 'ㅁㅌㅊ' which is a direct insult toward a person.,5,2
+26,5,post,0,B,WARN_AND_ALLOW,Harsh expression with slang insult not clearly directed at a specific individual but targets a group; profanity present.,4,3
+26,5,post,0,C,ALLOW,"Contains slang insult but no explicit threat, hate speech, or doxxing; criticism allowed under freedom of expression.",4,3
+27,5,comment,1,A,ALLOW,The comment is a neutral question without insults or offensive language.,1,2
+27,5,comment,1,B,ALLOW,The comment is a simple inquiry without any personal attack or profanity.,1,2
+27,5,comment,1,C,ALLOW,"The comment contains no insults, threats, or hate speech and is a neutral question.",1,2
+28,5,comment,2,A,ALLOW,Polite and neutral comment without any insult or criticism.,1,1
+28,5,comment,2,B,ALLOW,Neutral comment that does not contain insults or hate speech.,1,1
+28,5,comment,2,C,ALLOW,"No insults, threats, or hate speech present; simple neutral statement.",1,1
+29,5,comment,3,A,ALLOW,Polite and neutral question without any insult or negative tone.,1,1
+29,5,comment,3,B,ALLOW,Neutral inquiry that does not contain insults or hate speech and contributes minimally to discussion.,1,1
+29,5,comment,3,C,ALLOW,"No insults, threats, or hate speech; simple neutral question allowed.",1,1
+30,5,comment,4,A,BLOCK,"‘ㅁㅌㅊ’ is a derogatory slang insulting a person or group, violating the rule against direct insults.",5,1
+30,5,comment,4,B,BLOCK,"The comment contains a direct personal insult targeting a specific group, which is prohibited.",5,1
+30,5,comment,4,C,WARN_AND_ALLOW,"Contains harsh, emotional language with an insult but no explicit threat or hate speech, so it is allowed with warning.",5,1
+31,5,comment,5,A,BLOCK,"The comment contains a direct insult 'ㅅㅌㅊ' (시발년), which is a derogatory expression toward a person, violating the high protection policy.",5,1
+31,5,comment,5,B,BLOCK,"The comment includes a direct personal insult 'ㅅㅌㅊ', which is not allowed under balanced policy.",5,1
+31,5,comment,5,C,BLOCK,"The comment uses a severe insult 'ㅅㅌㅊ' targeting a person, which triggers blocking under minimal regulation policy.",5,1
+32,5,comment,6,A,ALLOW,The comment is a neutral statement of academic standing without insults or offensive language.,1,2
+32,5,comment,6,B,ALLOW,The comment provides factual information without any personal attack or profanity.,1,2
+32,5,comment,6,C,ALLOW,The comment is a straightforward sharing of academic status with no offensive or threatening content.,1,2
+33,5,comment,7,A,ALLOW,Polite and neutral question without any insult or negative tone.,1,1
+33,5,comment,7,B,ALLOW,Neutral and polite comment that does not contain criticism or insults.,1,1
+33,5,comment,7,C,ALLOW,"Simple, neutral question with no offensive content or threats.",1,1
+34,5,comment,8,A,ALLOW,Polite and neutral comment without any insult or criticism.,1,1
+34,5,comment,8,B,ALLOW,Neutral inquiry that does not contain any criticism or offensive language.,1,1
+34,5,comment,8,C,ALLOW,"Simple, polite question with no offensive or threatening content.",1,1
+35,5,comment,9,A,ALLOW,"Polite, neutral question without insults or profanity.",1,3
+35,5,comment,9,B,ALLOW,Respectful inquiry contributing to discussion without any personal attack or profanity.,1,3
+35,5,comment,9,C,ALLOW,"Neutral comment with no insults, threats, or hate speech.",1,3
+36,5,comment,10,A,ALLOW,"Polite, neutral comment without insults or derogatory language.",1,3
+36,5,comment,10,B,ALLOW,Respectful criticism contributing to discussion without personal attacks or profanity.,1,3
+36,5,comment,10,C,ALLOW,"No insults, threats, or hate speech; comment is a factual observation.",1,3
+37,5,comment,11,A,ALLOW,The comment is a neutral question without insults or offensive language.,1,2
+37,5,comment,11,B,ALLOW,The comment is a polite inquiry and contributes to discussion without any offensive content.,1,2
+37,5,comment,11,C,ALLOW,The comment is a neutral question with no offensive or threatening content.,1,2
+38,5,comment,12,A,ALLOW,The comment is a neutral factual statement without insults or offensive language.,1,3
+38,5,comment,12,B,ALLOW,The comment provides information and criticism in a respectful manner without profanity or personal attacks.,1,3
+38,5,comment,12,C,ALLOW,The comment is a neutral observation with no offensive or threatening content.,1,3
+39,5,comment,13,A,ALLOW,"짧고 중립적인 반박으로, 무례하거나 공격적이지 않음.",1,1
+39,5,comment,13,B,ALLOW,비판적이지만 무례하지 않고 토론에 기여할 수 있는 간단한 반박임.,1,1
+39,5,comment,13,C,ALLOW,표현의 자유 범위 내에서 간단한 의견 표명으로 문제 없음.,1,1
+40,5,comment,14,A,ALLOW,The comment is a polite disagreement with a numerical estimate and contains no insults or rude language.,1,3
+40,5,comment,14,B,ALLOW,"The comment provides a reasoned critique without profanity or personal attacks, contributing to discussion.",1,3
+40,5,comment,14,C,ALLOW,"The comment is a mild disagreement with no offensive language or threats, fully allowed under minimal regulation.",1,3
+41,5,comment,15,A,ALLOW,"The comment provides an observational statement without insults or offensive language, so it is polite/neutral.",1,3
+41,5,comment,15,B,ALLOW,The comment shares information relevant to academic performance without personal attacks or profanity.,1,3
+41,5,comment,15,C,ALLOW,"The comment is a neutral factual statement without threats, insults, or hate speech.",1,3
+42,5,comment,16,A,ALLOW,The comment is neutral and polite without any insult or criticism.,1,1
+42,5,comment,16,B,ALLOW,The comment is neutral and does not contain any personal attack or profanity.,1,1
+42,5,comment,16,C,ALLOW,"The comment is neutral and free of insults, threats, or hate speech.",1,1
+43,5,comment,17,A,ALLOW,The comment is a neutral statement sharing an anecdote without insults or derogatory language.,2,3
+43,5,comment,17,B,ALLOW,The comment provides information relevant to academic ranking without personal attacks or profanity.,2,3
+43,5,comment,17,C,ALLOW,"The comment is a factual anecdote with no insults, threats, or hate speech.",2,3
+44,5,comment,18,A,ALLOW,"Polite, neutral comment without insults or profanity.",1,2
+44,5,comment,18,B,ALLOW,Neutral statement contributing to discussion without harsh language.,1,2
+44,5,comment,18,C,ALLOW,"No insults, threats, or hate speech; simple factual comment.",1,2
+45,6,post,0,A,ALLOW,The comment is a polite question without insults or offensive language.,1,2
+45,6,post,0,B,ALLOW,The comment is a neutral inquiry contributing to discussion without any insults or profanity.,1,2
+45,6,post,0,C,ALLOW,The comment is a simple question with no offensive or threatening content.,1,2
+46,6,comment,1,A,ALLOW,Polite and neutral comment without insults or criticism.,1,1
+46,6,comment,1,B,ALLOW,No personal attack or profanity; neutral statement.,1,1
+46,6,comment,1,C,ALLOW,"No insults, threats, or hate speech; simple neutral comment.",1,1
+47,6,comment,2,A,ALLOW,"The comment is a neutral statement about a course and contains no insults, profanity, or personal attacks.",1,2
+47,6,comment,2,B,ALLOW,"The comment is informative and polite, contributing factual information without any offensive language.",1,2
+47,6,comment,2,C,ALLOW,"The comment is a neutral, factual statement with no insults, threats, or hate speech.",1,2
+48,6,comment,3,A,ALLOW,The comment is polite and neutral without any insult or criticism.,1,1
+48,6,comment,3,B,ALLOW,The comment is neutral and does not contain insults or hate speech.,1,1
+48,6,comment,3,C,ALLOW,The comment is polite and neutral with no offensive content.,1,1
+49,6,comment,4,A,ALLOW,The comment is a neutral factual statement without insults or offensive language.,1,2
+49,6,comment,4,B,ALLOW,The comment is a neutral statement contributing factual information without any offensive content.,1,2
+49,6,comment,4,C,ALLOW,The comment is a simple factual remark with no offensive or threatening content.,1,2
+50,6,comment,5,A,ALLOW,"The comment is a neutral phrase without insults, profanity, or targeted criticism.",1,1
+50,6,comment,5,B,ALLOW,"No personal attack, profanity, or hate speech present; comment is neutral.",1,1
+50,6,comment,5,C,ALLOW,"The comment contains no insults, threats, or hate speech and is allowed under minimal regulation.",1,1
+51,6,comment,6,A,ALLOW,"Polite, neutral comment providing information without insults or criticism.",1,2
+51,6,comment,6,B,ALLOW,Neutral informational comment with no insults or hate speech.,1,2
+51,6,comment,6,C,ALLOW,"No insults, threats, or hate speech; simple informative statement.",1,2
+52,7,post,0,A,ALLOW,Polite and neutral comment requesting a service without insults or profanity.,1,1
+52,7,post,0,B,ALLOW,Neutral request without any personal attack or hate speech.,1,1
+52,7,post,0,C,ALLOW,"No insults, threats, or hate speech; simple service inquiry.",1,1
+53,7,comment,1,A,ALLOW,"No direct insult, profanity, or hate speech detected; comment is neutral or unclear in tone.",1,1
+53,7,comment,1,B,ALLOW,"No personal attack, hate speech, or threat present; comment does not contribute to debate but is not harmful.",1,1
+53,7,comment,1,C,ALLOW,"Comment contains no threats, hate speech, or targeted insults; freedom of expression preserved.",1,1
+54,7,comment,2,A,ALLOW,Polite and neutral question without any insult or negative tone.,1,2
+54,7,comment,2,B,ALLOW,Neutral inquiry that contributes to discussion without any offensive language.,1,2
+54,7,comment,2,C,ALLOW,"No insults, threats, or hate speech; simple question allowed.",1,2
+55,7,comment,3,A,ALLOW,"단순 인물 언급으로 모욕, 욕설, 비하 표현이 없으므로 허용.",1,1
+55,7,comment,3,B,ALLOW,개인 공격이나 혐오 표현이 없으므로 허용.,1,1
+55,7,comment,3,C,ALLOW,단순 인물 언급으로 규제 사유에 해당하지 않음.,1,1
+56,7,comment,4,A,ALLOW,Polite and neutral request without any insult or inappropriate language.,1,1
+56,7,comment,4,B,ALLOW,No personal attack or hate speech; the comment is a simple polite question.,1,1
+56,7,comment,4,C,ALLOW,The comment is polite and contains no offensive or threatening content.,1,1
+57,7,comment,5,A,ALLOW,The comment is neutral and polite without any insult or criticism.,1,1
+57,7,comment,5,B,ALLOW,"The comment contains no insults, hate speech, or threats and is neutral.",1,1
+57,7,comment,5,C,ALLOW,The comment is neutral and does not violate any rules on hate speech or threats.,1,1
+58,7,comment,6,A,ALLOW,Polite and neutral comment without any insult or harsh language.,1,1
+58,7,comment,6,B,ALLOW,Comment is polite and does not contain any profanity or personal attack.,1,1
+58,7,comment,6,C,ALLOW,"No insults, threats, or hate speech; simple polite request.",1,1
+59,7,comment,7,A,ALLOW,Polite or neutral comment without insult or profanity.,1,2
+59,7,comment,7,B,ALLOW,Neutral question contributing to discussion without any harassment or profanity.,1,2
+59,7,comment,7,C,ALLOW,"No insults, threats, or hate speech; simple neutral question.",1,2
+60,8,post,0,A,ALLOW,"The comment is a neutral, factual recruitment post without insults or offensive language.",1,1
+60,8,post,0,B,ALLOW,"No personal attacks, hate speech, or threats; purely informational content.",1,1
+60,8,post,0,C,ALLOW,"The comment contains no insults, threats, or hate speech and is a straightforward post.",1,1
+61,8,comment,1,A,ALLOW,"중퇴자에 대한 직접적인 모욕이나 욕설이 없고, 정책 관련 정보 제공으로 판단됨.",2,3
+61,8,comment,1,B,ALLOW,"정책 관련 정보 제공이며, 욕설이나 인신공격이 없어 토론 가치가 있음.",2,3
+61,8,comment,1,C,ALLOW,비판적 표현이나 욕설 없이 단순 정보 제공으로 표현의 자유 범위 내임.,2,3
+62,8,comment,2,A,ALLOW,The comment is polite and neutral without any insult or derogatory expression.,1,2
+62,8,comment,2,B,ALLOW,The comment is respectful and does not contain any personal attack or profanity.,1,2
+62,8,comment,2,C,ALLOW,"The comment is polite and contains no threats, insults, or hate speech.",1,2
+63,8,comment,3,A,ALLOW,The comment is neutral and polite without any insult or criticism.,1,1
+63,8,comment,3,B,ALLOW,The comment is neutral and does not contain any personal attack or harsh language.,1,1
+63,8,comment,3,C,ALLOW,"The comment is neutral and contains no insults, threats, or hate speech.",1,1
+64,8,comment,4,A,ALLOW,"No personal insult, profanity, or hate speech; comment is a neutral statement about cost sharing.",2,3
+64,8,comment,4,B,ALLOW,"Comment is a factual observation without insults or hate speech, contributing to discussion on cost sharing.",2,3
+64,8,comment,4,C,ALLOW,"Comment is a neutral statement with no threats or hate speech, fully allowed under minimal regulation.",2,3
+65,8,comment,5,A,ALLOW,Neutral factual statement without insult or profanity.,1,3
+65,8,comment,5,B,ALLOW,Factual comment with no personal attack or profanity.,1,3
+65,8,comment,5,C,ALLOW,"Neutral statement without threats, insults, or hate speech.",1,3
+66,8,comment,6,A,ALLOW,Polite and neutral greeting without any insult or criticism.,1,1
+66,8,comment,6,B,ALLOW,No personal attack or hate speech; polite and neutral comment.,1,1
+66,8,comment,6,C,ALLOW,Polite and neutral comment with no threats or hate speech.,1,1
+67,9,post,0,A,ALLOW,"Polite, neutral question without any insult or inappropriate language.",1,3
+67,9,post,0,B,ALLOW,Neutral inquiry contributing to discussion without any personal attack or profanity.,1,3
+67,9,post,0,C,ALLOW,Completely appropriate and polite question with no offensive content.,1,3
+68,9,comment,1,A,ALLOW,The comment is a neutral factual statement without insults or offensive language.,1,3
+68,9,comment,1,B,ALLOW,The comment is a neutral observation contributing to discussion without any personal attack or profanity.,1,3
+68,9,comment,1,C,ALLOW,"The comment is a factual statement with no insults, threats, or hate speech.",1,3
+69,9,comment,2,A,ALLOW,The comment is a neutral slang expression without insult or hate speech.,1,1
+69,9,comment,2,B,ALLOW,The comment is a brief agreement slang with no insults or hate speech.,1,1
+69,9,comment,2,C,ALLOW,The comment is a simple slang expression without any threat or hate speech.,1,1
+70,9,comment,3,A,ALLOW,"The comment is a neutral, factual statement without insults or offensive language.",2,2
+70,9,comment,3,B,ALLOW,No personal attacks or hate speech; the comment is a simple observation.,2,2
+70,9,comment,3,C,ALLOW,"The comment contains no threats, insults, or hate speech and is allowed under minimal regulation.",2,2
+71,9,comment,4,A,ALLOW,The comment is a neutral personal statement without insults or offensive language.,1,1
+71,9,comment,4,B,ALLOW,The comment is a neutral personal statement and does not contain insults or hate speech.,1,1
+71,9,comment,4,C,ALLOW,The comment is a neutral personal statement without any offensive or threatening content.,1,1
+72,10,post,0,A,ALLOW,"The comment is a neutral question without insults or offensive language, and includes an informational note.",1,2
+72,10,post,0,B,ALLOW,"The comment poses a question and shares information without personal attacks or profanity, contributing to discussion.",1,2
+72,10,post,0,C,ALLOW,"The comment is neutral and informative, with no threats, insults, or hate speech.",1,2
+73,10,comment,1,A,ALLOW,"Polite, neutral question without insults or offensive language.",1,3
+73,10,comment,1,B,ALLOW,Neutral inquiry contributing to discussion without any offensive content.,1,3
+73,10,comment,1,C,ALLOW,"No insults, threats, or hate speech; simple question allowed.",1,3
+74,10,comment,2,A,ALLOW,The comment is a neutral suggestion without insults or offensive language.,2,1
+74,10,comment,2,B,ALLOW,No personal attack or hate speech; the comment is a simple referral.,2,1
+74,10,comment,2,C,ALLOW,"The comment contains no threats, insults, or hate speech and is allowed under minimal regulation.",2,1
+75,10,comment,3,A,ALLOW,"The comment is a single word without insult, profanity, or targeted negativity.",1,1
+75,10,comment,3,B,ALLOW,"No personal attack, hate speech, or threat present; comment is neutral and minimal.",1,1
+75,10,comment,3,C,ALLOW,No hateful or threatening content; minimal and neutral expression allowed.,1,1
+76,10,comment,4,A,ALLOW,"No direct insult, profanity, or hate speech detected; comment is ambiguous and not clearly targeted.",1,1
+76,10,comment,4,B,ALLOW,"No explicit personal attack, hate speech, or threat present; comment lacks clear argument but is not harmful.",1,1
+76,10,comment,4,C,ALLOW,"Comment does not contain threats, hate speech, or targeted insults; freedom of expression applies.",1,1
+77,10,comment,5,A,ALLOW,"The comment uses slang '개꿀빨더라' but it is not targeted insult or hate speech, and no personal attack is present.",3,3
+77,10,comment,5,B,ALLOW,"The comment contains informal slang but no direct personal attack or hate speech, and it contributes to discussion about roles.",3,3
+77,10,comment,5,C,ALLOW,"The comment is a casual expression with slang but no threats, hate speech, or targeted insults, so it is allowed.",3,3
+78,10,comment,6,A,ALLOW,"The comment is a neutral statement without insults, profanity, or personal attacks.",1,2
+78,10,comment,6,B,ALLOW,The comment is a neutral opinion contributing to discussion without any personal attack or profanity.,1,2
+78,10,comment,6,C,ALLOW,"The comment is a simple statement with no insults, threats, or hate speech.",1,2
+79,10,comment,7,A,WARN_AND_ALLOW,"강한 비판이지만 특정 인물에 대한 모욕이 아니며, 시스템에 대한 의견임.",3,3
+79,10,comment,7,B,WARN_AND_ALLOW,공군 제도에 대한 강한 표현이지만 개인 공격이나 혐오 표현은 아님.,3,3
+79,10,comment,7,C,ALLOW,"시스템에 대한 비판으로, 명백한 위협이나 혐오 표현이 없으므로 허용.",3,3
+80,10,comment,8,A,WARN_AND_ALLOW,"강한 비판 표현이지만 개인이나 집단에 대한 직접적인 모욕이 아니며, 시스템에 대한 불만임.",3,3
+80,10,comment,8,B,WARN_AND_ALLOW,과격한 표현이 있으나 특정 개인 대상이 아니고 제도에 대한 비판임.,3,3
+80,10,comment,8,C,ALLOW,거친 표현이지만 명백한 위협이나 혐오 표현이 아니므로 허용됨.,3,3
+81,10,comment,9,A,WARN_AND_ALLOW,'빡세'는 다소 거친 표현이나 특정 인물에 대한 직접 모욕이 아니므로 강한 비판으로 분류됨.,3,3
+81,10,comment,9,B,WARN_AND_ALLOW,강한 표현이 있으나 특정 개인 대상이 아니고 정책이나 제도에 대한 비판으로 판단됨.,3,3
+81,10,comment,9,C,ALLOW,거친 표현이 있으나 명백한 위협이나 혐오 표현이 아니므로 허용됨.,3,3
+82,10,comment,10,A,ALLOW,"The comment is a casual, humorous personal experience without insults or hate speech.",2,2
+82,10,comment,10,B,ALLOW,The comment shares a personal opinion in a light tone without profanity or personal attacks.,2,2
+82,10,comment,10,C,ALLOW,"The comment is informal but contains no threats, hate speech, or targeted insults.",2,2
+83,10,comment,11,A,WARN_AND_ALLOW,성별 고정관념을 암시하는 표현이지만 직접적인 모욕이나 혐오 표현은 아니므로 경고 후 허용.,2,2
+83,10,comment,11,B,ALLOW,성별에 대한 고정관념 표현이 있으나 직접적인 인신공격이나 혐오 표현이 아니므로 허용.,2,2
+83,10,comment,11,C,ALLOW,표현의 자유 범위 내에서 성별 고정관념을 담은 발언이지만 명백한 위협이나 혐오가 아니므로 허용.,2,2
+84,10,comment,12,A,ALLOW,The comment is polite and neutral without any insult or harsh language.,1,1
+84,10,comment,12,B,ALLOW,The comment is neutral and does not contain any personal attack or profanity.,1,1
+84,10,comment,12,C,ALLOW,"The comment is a mild, neutral expression without any insults or threats.",1,1
+85,10,comment,13,A,BLOCK,‘폐급’은 직접적인 모욕 표현으로 특정 집단을 비하하는 언어이므로 차단 대상임.,5,2
+85,10,comment,13,B,BLOCK,특정 집단(공군)을 향한 명백한 모욕적 표현이므로 차단함.,5,2
+85,10,comment,13,C,WARN_AND_ALLOW,모욕적 표현이 있으나 명백한 위협이나 혐오표현은 아니므로 경고 후 허용함.,5,2
+86,10,comment,14,A,BLOCK,직접적인 인신공격(‘사회생활 안해본애’)과 조롱(‘ㅋ’)이 포함되어 있어 매너 최우선 정책에 따라 차단함.,4,1
+86,10,comment,14,B,WARN_AND_ALLOW,강한 표현과 조롱이 있으나 특정 개인에 대한 명확한 욕설은 아니므로 경고 후 허용함.,4,2
+86,10,comment,14,C,ALLOW,조롱과 인신공격성 표현이 있으나 명백한 위협이나 혐오표현이 아니므로 표현의 자유 원칙에 따라 허용함.,4,2
+87,10,comment,15,A,BLOCK,"Contains strong profanity ('존나', 'ㅈㄴ') and mocking tone targeting groups (육군 해병대, 30대 후반분들), violating the low tolerance for insults and sarcasm.",5,2
+87,10,comment,15,B,WARN_AND_ALLOW,"Strong profanity and sarcasm aimed at groups and behaviors, but no direct personal attack or hate speech; fits criteria for harsh expressions targeting groups or ideas.",5,3
+87,10,comment,15,C,ALLOW,"Contains harsh language and mockery but no explicit threats, hate speech, or doxxing; allowed under minimal regulation policy prioritizing freedom of expression.",5,3
+88,11,post,0,A,BLOCK,"Direct insult 'ㅈㄱㄴ' (좆같은) toward 수능친사람 is a derogatory expression targeting a group, violating the high protection rule.",5,1
+88,11,post,0,B,WARN_AND_ALLOW,Harsh expression with profanity aimed at a group (수능친사람) but not a direct personal attack or hate speech; fits strong criticism with profanity.,5,2
+88,11,post,0,C,ALLOW,Profanity directed at a group without explicit threat or hate speech; allowed under minimal regulation policy prioritizing freedom of expression.,5,2
+89,11,comment,1,A,ALLOW,"No direct insult, profanity, or hate speech detected; comment is a brief slang expression without targeting a person.",2,1
+89,11,comment,1,B,ALLOW,Comment is a short slang expression without personal attack or hate speech; no reason to block or warn.,2,1
+89,11,comment,1,C,ALLOW,"No explicit threat, hate speech, or targeted insult; expression is allowed under minimal regulation.",2,1
+90,11,comment,2,A,WARN_AND_ALLOW,Contains mild slang '개부럽노' expressing envy but no direct insult or hate speech; considered strong emotional expression without personal attack.,3,2
+90,11,comment,2,B,WARN_AND_ALLOW,Use of slang '개부럽노' is harsh emotional language but not directed at a person; comment critiques relative academic achievement indirectly.,3,2
+90,11,comment,2,C,ALLOW,"Slang expressing envy is allowed as it is not hateful, threatening, or targeted at a protected group.",3,2
+91,11,comment,3,A,ALLOW,"No direct insult, profanity, or hate speech detected; comment is neutral and brief.",1,1
+91,11,comment,3,B,ALLOW,Comment is neutral and does not contain insults or hate speech; no issue for debate.,1,1
+91,11,comment,3,C,ALLOW,"No threats, insults, or hate speech; comment is a simple statement without hostility.",1,1
+92,11,comment,4,A,ALLOW,"The comment is a simple statement without insults, profanity, or targeted criticism.",1,1
+92,11,comment,4,B,ALLOW,"No personal attack, profanity, or hate speech; just a neutral personal opinion.",1,1
+92,11,comment,4,C,ALLOW,"The comment contains no insults, threats, or hate speech and is a personal expression.",1,1
+93,11,comment,5,A,ALLOW,"The comment is a neutral question without insults or derogatory language, so it is polite enough under Policy A.",2,3
+93,11,comment,5,B,ALLOW,"The comment is a neutral inquiry without personal attack or profanity, contributing to discussion.",2,3
+93,11,comment,5,C,ALLOW,"The comment is a simple question with no insults, threats, or hate speech, so it is allowed.",2,3
+94,11,comment,6,A,ALLOW,"The comment is a neutral, self-reflective statement without insults or offensive language.",1,2
+94,11,comment,6,B,ALLOW,No personal attack or hate speech; the comment shares a personal experience without harsh language.,1,2
+94,11,comment,6,C,ALLOW,"The comment is a mild personal statement with no insults, threats, or hate speech.",1,2
+95,11,comment,7,A,ALLOW,The comment is neutral and polite without insults or derogatory expressions.,1,1
+95,11,comment,7,B,ALLOW,"No personal attack, hate speech, or threat present; the comment is neutral.",1,1
+95,11,comment,7,C,ALLOW,"The comment contains no insults, threats, or hate speech and is very mild.",1,1
+96,11,comment,8,A,ALLOW,Polite or neutral comment without insult or criticism.,1,1
+96,11,comment,8,B,ALLOW,"No personal attack, hate speech, or threat present.",1,1
+96,11,comment,8,C,ALLOW,"No insults, threats, or hate speech; expression is neutral.",1,1
+97,11,comment,9,A,ALLOW,"The comment is neutral and contains no insult, criticism, or inappropriate language.",1,1
+97,11,comment,9,B,ALLOW,The comment is neutral and does not contain any personal attack or hate speech.,1,1
+97,11,comment,9,C,ALLOW,"The comment is neutral and does not violate any rules regarding insults, threats, or hate speech.",1,1
+98,11,comment,10,A,ALLOW,Polite or neutral comment without any insult or criticism.,1,1
+98,11,comment,10,B,ALLOW,"No harassment, hate speech, or meaningful criticism present.",1,1
+98,11,comment,10,C,ALLOW,"No threats, hate speech, or insults; expression is neutral.",1,1
+99,12,post,0,A,ALLOW,"The comment is a polite, neutral question without insults or offensive language.",1,4
+99,12,post,0,B,ALLOW,The comment is respectful and contributes to discussion by asking for comparative information.,1,4
+99,12,post,0,C,ALLOW,The comment is a neutral inquiry with no offensive or threatening content.,1,4
+100,12,comment,1,A,ALLOW,Polite and neutral comment without insults or criticism.,1,1
+100,12,comment,1,B,ALLOW,No personal attack or hate speech; neutral expression.,1,1
+100,12,comment,1,C,ALLOW,"No insults, threats, or hate speech; simple neutral comment.",1,1
+101,12,comment,2,A,ALLOW,The comment is polite and neutral with no insults or derogatory language.,1,2
+101,12,comment,2,B,ALLOW,The comment is a neutral question without any personal attack or profanity.,1,2
+101,12,comment,2,C,ALLOW,"The comment contains no threats, hate speech, or insults and is a simple inquiry.",1,2
+102,12,comment,3,A,ALLOW,Polite and neutral comment without insults or harsh language.,1,2
+102,12,comment,3,B,ALLOW,Neutral statement contributing a simple opinion without rudeness or attack.,1,2
+102,12,comment,3,C,ALLOW,"No insults, threats, or hate speech; simple expression of opinion.",1,2
+103,12,comment,4,A,ALLOW,The comment is a neutral comparison without insults or derogatory language.,1,4
+103,12,comment,4,B,ALLOW,The comment provides a balanced comparison and contributes to discussion without personal attacks.,1,4
+103,12,comment,4,C,ALLOW,"The comment is a factual comparison with no insults, threats, or hate speech.",1,4
+104,12,comment,5,A,BLOCK,"직무를 '쓰레기', '잡돌이'로 비하하는 직접적인 모욕 표현이 포함되어 있어 차단 대상임.",5,2
+104,12,comment,5,B,WARN_AND_ALLOW,직무에 대한 강한 비하 표현과 모욕적 언어가 있으나 특정 개인에 대한 직접 공격은 아니므로 경고 후 허용.,5,2
+104,12,comment,5,C,WARN_AND_ALLOW,강한 모욕적 표현이 있으나 명백한 위협이나 혐오 표현은 아니므로 경고 후 허용함.,5,2
+105,12,comment,6,A,ALLOW,"No insult, profanity, or targeted sarcasm detected; comment is neutral and polite.",1,1
+105,12,comment,6,B,ALLOW,"Comment does not contain personal attacks, hate speech, or threats; neutral expression.",1,1
+105,12,comment,6,C,ALLOW,No hateful or threatening content; expression is mild and non-hostile.,1,1
+106,12,comment,7,A,ALLOW,Polite or neutral comment without insult or profanity.,1,2
+106,12,comment,7,B,ALLOW,No personal attack or hate speech; comment is neutral and brief.,1,2
+106,12,comment,7,C,ALLOW,"No threats, hate speech, or targeted insults; expression is allowed.",1,2
+107,12,comment,8,A,ALLOW,"The comment is a neutral comparison without insults or derogatory language, so it is allowed under high protection rules.",2,3
+107,12,comment,8,B,ALLOW,"The comment provides a comparative statement relevant to the topic without personal attacks or profanity, contributing to debate.",2,3
+107,12,comment,8,C,ALLOW,"The comment is a straightforward comparison with no insults, threats, or hate speech, so it is allowed under minimal regulation.",2,3
+108,13,post,0,A,ALLOW,"The comment is a friendly group introduction without insults, hate speech, or threats, and uses polite and neutral language.",1,1
+108,13,post,0,B,ALLOW,"The comment is a neutral, informative post introducing a group and does not contain personal attacks or hate speech.",1,1
+108,13,post,0,C,ALLOW,"The comment is a harmless group recruitment post with no insults, threats, or hate speech, fully allowed under minimal regulation.",1,1
+109,13,comment,1,A,BLOCK,'지랄'은 욕설로서 사람을 향한 직접적인 모욕 표현에 해당하여 차단 대상임.,5,2
+109,13,comment,1,B,WARN_AND_ALLOW,"욕설이 있으나 특정 개인에 대한 직접적 인신공격은 아니며, 아이디어나 스펙에 대한 비판으로 판단됨.",4,3
+109,13,comment,1,C,ALLOW,욕설이 있으나 명백한 위협이나 혐오 표현이 아니므로 표현의 자유 차원에서 허용함.,4,3
+110,13,comment,2,A,ALLOW,The comment uses slang '개' as an intensifier but is a positive expression without insult or hate.,2,1
+110,13,comment,2,B,ALLOW,No personal attack or hate speech; the comment is a casual positive remark.,2,1
+110,13,comment,2,C,ALLOW,"The comment is informal but not hateful or threatening, so it is allowed.",2,1
+111,13,comment,3,A,ALLOW,Polite or neutral comment without insult or derogatory expression.,1,1
+111,13,comment,3,B,ALLOW,Comment is respectful and does not contain insults or hate speech.,1,1
+111,13,comment,3,C,ALLOW,"No insults, threats, or hate speech; comment is neutral and polite.",1,1
+112,13,comment,4,A,ALLOW,"Neutral, informative comment without insults or criticism.",1,1
+112,13,comment,4,B,ALLOW,No personal attack or hate speech; simple factual statement.,1,1
+112,13,comment,4,C,ALLOW,"No threats, insults, or hate speech; purely informational.",1,1
+113,13,comment,5,A,ALLOW,"The comment uses slang but is not targeted, insulting, or hateful toward a person or group.",3,1
+113,13,comment,5,B,ALLOW,The comment is informal and emotional but does not contain personal attacks or hate speech.,3,1
+113,13,comment,5,C,ALLOW,"The comment is a casual expression without threats or hate speech, so it is allowed.",3,1
+114,13,comment,6,A,ALLOW,Polite and neutral question without any insult or negative tone.,1,1
+114,13,comment,6,B,ALLOW,Neutral question that does not contain insults or hate speech and contributes minimally to discussion.,1,1
+114,13,comment,6,C,ALLOW,"No insults, threats, or hate speech; simple neutral question.",1,1
+115,13,comment,7,A,ALLOW,Polite and neutral question without any insult or offensive language.,1,1
+115,13,comment,7,B,ALLOW,Neutral inquiry that does not contain insults or hate speech and contributes minimally to discussion.,1,1
+115,13,comment,7,C,ALLOW,No offensive or threatening content; simple question allowed under minimal regulation.,1,1
+116,13,comment,8,A,ALLOW,"The comment is a neutral statement without insults, profanity, or criticism.",1,1
+116,13,comment,8,B,ALLOW,The comment is neutral and does not contain any personal attacks or hate speech.,1,1
+116,13,comment,8,C,ALLOW,The comment is a simple factual statement without any offensive content.,1,1
+117,13,comment,9,A,ALLOW,"The comment is a neutral observation without insult, profanity, or targeted mockery.",1,1
+117,13,comment,9,B,ALLOW,The comment is a neutral statement without personal attack or hate speech.,1,1
+117,13,comment,9,C,ALLOW,"The comment contains no insults, threats, or hate speech and is allowed under minimal regulation.",1,1
+118,13,comment,10,A,BLOCK,"The phrase '이 사람들' combined with skull emojis implies a derogatory and threatening tone toward a group, violating the rule against insults and threats.",4,1
+118,13,comment,10,B,BLOCK,"The comment targets a group with hostile symbolism (skull emojis), which can be interpreted as hate speech or threat, thus blocked under hate speech and threats rules.",4,1
+118,13,comment,10,C,WARN_AND_ALLOW,"Harsh and hostile language with symbolic insults is present but no explicit threat or hate speech with slurs, so it is allowed with warning.",4,1
+119,13,comment,11,A,ALLOW,"No insult, profanity, or hate speech detected; comment is neutral and does not target individuals or groups.",1,1
+119,13,comment,11,B,ALLOW,"Comment is neutral and does not contain personal attacks, hate speech, or threats.",1,1
+119,13,comment,11,C,ALLOW,"No threats, hate speech, or targeted insults; expression is allowed under minimal regulation.",1,1
+120,13,comment,12,A,WARN_AND_ALLOW,"짧고 다소 무례할 수 있으나, 개인이나 집단에 대한 직접적인 모욕이나 욕설이 아니므로 강한 비판으로 간주.",3,2
+120,13,comment,12,B,WARN_AND_ALLOW,"무례한 표현이나 욕설은 없으나, 짧고 다소 공격적인 어투로 아이디어나 상황에 대한 강한 표현으로 판단.",3,2
+120,13,comment,12,C,ALLOW,"명확한 위협, 혐오, 욕설이 없으므로 표현의 자유 차원에서 허용.",2,2
+121,13,comment,13,A,ALLOW,The comment is a neutral question without insults or offensive language.,1,2
+121,13,comment,13,B,ALLOW,The comment is polite and contributes to understanding the selection process without any personal attack.,1,2
+121,13,comment,13,C,ALLOW,The comment is a neutral inquiry with no offensive or threatening content.,1,2
+122,13,comment,14,A,ALLOW,Polite and neutral comment without any insult or criticism.,1,1
+122,13,comment,14,B,ALLOW,Neutral and polite comment that does not contain criticism or insults.,1,1
+122,13,comment,14,C,ALLOW,"No insults, threats, or hate speech; simple polite expression.",1,1
+123,13,comment,15,A,ALLOW,Polite and neutral comment without any insult or criticism.,1,1
+123,13,comment,15,B,ALLOW,No personal attack or hate speech; comment is neutral and polite.,1,1
+123,13,comment,15,C,ALLOW,Comment is polite and contains no threats or hate speech.,1,1
+124,13,comment,16,A,ALLOW,Polite and neutral comment without any insults or criticism.,1,1
+124,13,comment,16,B,ALLOW,"No insults, hate speech, or threats; neutral and polite comment.",1,1
+124,13,comment,16,C,ALLOW,No offensive or threatening content; fully allowed under minimal regulation.,1,1
+125,13,comment,17,A,ALLOW,"The comment uses slang and humor without direct insult or hate speech, so it is allowed under high protection policy.",2,2
+125,13,comment,17,B,ALLOW,No direct personal attack or hate speech; the comment is a light joke without harsh language.,2,2
+125,13,comment,17,C,ALLOW,"The comment is a casual joke without threats or hate speech, so it is allowed under minimal regulation.",2,2
+126,14,post,0,A,WARN_AND_ALLOW,"Contains strong language ('졸라 크더라구요', '개징그러워요') but no direct insult to a person or group; strong expression about an experience allowed with warning.",4,2
+126,14,post,0,B,WARN_AND_ALLOW,Profanity present but not directed at a person; emotional description of an experience allowed with warning.,4,2
+126,14,post,0,C,ALLOW,"Harsh language used but no threats, hate speech, or direct personal attacks; allowed under freedom of expression.",4,2
+127,14,comment,1,A,BLOCK,"The phrase '유냥이 목을 땟구나' implies a violent threat or harm toward a person, violating the rule against threats or suggestions of harm.",5,1
+127,14,comment,1,B,BLOCK,"This comment contains a clear suggestion of harm/threat toward an individual, which is prohibited under the policy.",5,1
+127,14,comment,1,C,BLOCK,"Explicit threat of violence is present, which is not allowed even under minimal regulation.",5,1
+128,14,comment,2,A,ALLOW,The comment is a neutral laughter expression without insult or hate speech.,1,1
+128,14,comment,2,B,ALLOW,"No personal attack, hate speech, or threat present; just laughter.",1,1
+128,14,comment,2,C,ALLOW,"The comment contains no insults, threats, or hate speech, so it is allowed.",1,1
+129,14,comment,3,A,ALLOW,"The comment is neutral and does not contain insults, profanity, or targeted criticism.",1,1
+129,14,comment,3,B,ALLOW,"The comment is neutral and does not contain personal attacks, hate speech, or threats.",1,1
+129,14,comment,3,C,ALLOW,"The comment is neutral and does not violate any rules regarding insults, threats, or hate speech.",1,1
+130,14,comment,4,A,ALLOW,The comment is a neutral emotional expression without insults or criticism.,1,1
+130,14,comment,4,B,ALLOW,"The comment contains no criticism, insults, or hate speech, so it is allowed.",1,1
+130,14,comment,4,C,ALLOW,The comment is a simple emotional expression with no offensive content.,1,1
+131,15,post,0,A,ALLOW,"The comment presents a moral dilemma without direct insult, hate speech, or personal attack, and uses neutral language.",2,4
+131,15,post,0,B,ALLOW,"The comment raises a thought-provoking ethical question without personal attacks or hate speech, contributing to debate.",2,4
+131,15,post,0,C,ALLOW,"The comment is a hypothetical scenario encouraging discussion, with no threats, insults, or hate speech.",2,4
+132,15,comment,1,A,ALLOW,"The comment is a neutral, philosophical question without insults or hate speech, so it is allowed under high protection policy.",2,4
+132,15,comment,1,B,ALLOW,"The comment raises a thoughtful question about values without personal attacks or profanity, contributing to debate.",2,4
+132,15,comment,1,C,ALLOW,"The comment is a critical question but contains no threats, insults, or hate speech, so it is allowed under minimal regulation.",2,4
+133,15,comment,2,A,ALLOW,"The comment is a neutral question without insult, profanity, or hate speech.",1,1
+133,15,comment,2,B,ALLOW,"No personal attack, hate speech, or threat is present; the comment is neutral.",1,1
+133,15,comment,2,C,ALLOW,"The comment is a simple question without insults, threats, or hate speech.",1,1
+134,15,comment,3,A,ALLOW,The comment is a neutral statement about responsibility without insults or hate speech.,2,3
+134,15,comment,3,B,ALLOW,No personal attack or hate speech; the comment contributes a perspective on responsibility.,2,3
+134,15,comment,3,C,ALLOW,"The comment is a neutral expression without threats or hate speech, so it is allowed.",2,3
+135,15,comment,4,A,BLOCK,'여남?'은 성별을 비하하거나 혐오하는 의도로 해석될 수 있어 혐오 표현에 해당함.,3,1
+135,15,comment,4,B,BLOCK,성별에 대한 혐오 표현으로 판단되어 혐오 발언 차단 대상임.,3,1
+135,15,comment,4,C,BLOCK,성별을 비하하는 혐오 표현으로 명백한 혐오 발언에 해당함.,3,1
+136,15,comment,5,A,ALLOW,"The comment is a neutral, factual statement without insults or offensive language.",1,2
+136,15,comment,5,B,ALLOW,No personal attack or hate speech; the comment contributes a relevant observation.,1,2
+136,15,comment,5,C,ALLOW,"The comment is a neutral statement without profanity or threats, so it is allowed.",1,2
+137,15,comment,6,A,BLOCK,"'한남죽어'는 특정 성별 집단에 대한 명백한 혐오 표현이자 죽으라는 위협성 문구로, 혐오 발언 및 위협 금지 규정에 해당합니다.",5,1
+137,15,comment,6,B,BLOCK,"특정 성별 집단(남성)에 대한 명백한 혐오 발언과 위협적 표현으로, 혐오 발언 및 폭력 위협 금지 규정에 해당합니다.",5,1
+137,15,comment,6,C,BLOCK,"특정 집단에 대한 명백한 혐오 발언과 죽으라는 위협적 표현으로, 혐오 및 폭력 위협 금지 규정에 해당합니다.",5,1
+138,16,post,0,A,ALLOW,Polite or neutral comment asking a question without insults or profanity.,1,2
+138,16,post,0,B,ALLOW,"Neutral inquiry without insults or hate speech, contributing to discussion.",1,2
+138,16,post,0,C,ALLOW,"No insults, threats, or hate speech; simple question allowed.",1,2
+139,16,comment,1,A,ALLOW,"The comment is a short slang expression without direct insult or hate speech, so it is allowed as a non-targeted slang.",2,1
+139,16,comment,1,B,ALLOW,"The comment does not contain personal attacks, hate speech, or threats, and is a brief emotional expression.",2,1
+139,16,comment,1,C,ALLOW,"The comment is a mild slang expression without threats or hate speech, so it is allowed under minimal regulation.",2,1
+140,16,comment,2,A,WARN_AND_ALLOW,"Contains profanity ('ㅈ같다') aimed at a system or situation, not a person, so it triggers warning but is allowed.",4,1
+140,16,comment,2,B,WARN_AND_ALLOW,"Profanity present but not directed at a specific person, so allowed with warning under harsh expression rules.",4,1
+140,16,comment,2,C,ALLOW,Profanity without explicit threat or hate speech is allowed under minimal regulation policy.,4,1
+141,16,comment,3,A,ALLOW,"'ㄹㅇ' is a slang abbreviation meaning '진짜로' or 'really', which is neutral and not insulting.",1,1
+141,16,comment,3,B,ALLOW,'ㄹㅇ' is a neutral slang expression without insults or hate speech.,1,1
+141,16,comment,3,C,ALLOW,"'ㄹㅇ' is a casual slang with no threat, insult, or hate speech.",1,1
+142,16,comment,4,A,ALLOW,"The comment is a casual expression without insult or derogatory language, so it is allowed as neutral or polite.",2,1
+142,16,comment,4,B,ALLOW,"The comment does not contain insults, hate speech, or threats and is a neutral emotional expression.",2,1
+142,16,comment,4,C,ALLOW,"The comment is a mild emotional expression without any threats or hate speech, so it is allowed.",2,1
+143,16,comment,5,A,ALLOW,Polite or neutral comment without insults or criticism.,1,1
+143,16,comment,5,B,ALLOW,Neutral comment with no insults or hate speech.,1,1
+143,16,comment,5,C,ALLOW,"No insults, threats, or hate speech present.",1,1
+144,16,comment,6,A,ALLOW,"The comment is neutral and contains no insult, profanity, or criticism.",1,1
+144,16,comment,6,B,ALLOW,The comment is neutral with no personal attack or hate speech.,1,1
+144,16,comment,6,C,ALLOW,The comment is neutral and does not violate any rules.,1,1
+145,16,comment,7,A,ALLOW,The comment uses casual laughter and expresses mild frustration without insults or targeted negativity.,2,2
+145,16,comment,7,B,ALLOW,"The comment is an emotional expression without direct insults or hate speech, contributing lightly to discussion.",2,2
+145,16,comment,7,C,ALLOW,"The comment is mild and non-threatening, expressing frustration with humor, so it is allowed under minimal regulation.",2,2
+146,16,comment,8,A,ALLOW,The comment is neutral and polite without any insult or criticism.,1,1
+146,16,comment,8,B,ALLOW,The comment is neutral and does not contain any personal attack or hate speech.,1,1
+146,16,comment,8,C,ALLOW,The comment is a simple neutral expression without any offensive content.,1,1
+147,16,comment,9,A,BLOCK,"‘개씨발’은 명백한 욕설이며, 사람이나 집단을 향한 모욕적 표현으로 간주되어 차단 대상임.",5,1
+147,16,comment,9,B,WARN_AND_ALLOW,욕설이 있으나 특정 개인을 직접 공격하지 않아 경고 후 허용 처리함.,5,1
+147,16,comment,9,C,WARN_AND_ALLOW,강한 욕설이지만 명확한 위협이나 혐오 표현은 아니므로 경고 후 허용함.,5,1
+148,16,comment,10,A,BLOCK,"Contains profanity ('씨발'), which is blocked under Policy A regardless of target.",5,1
+148,16,comment,10,B,WARN_AND_ALLOW,"Profanity present but not clearly directed at a specific person, so it is warned and allowed.",5,1
+148,16,comment,10,C,WARN_AND_ALLOW,"Harsh emotional language with profanity but no explicit threat or hate speech, so warned and allowed.",5,1
+149,16,comment,11,A,ALLOW,"The comment is a brief emotional expression without insult, threat, or hate speech.",3,1
+149,16,comment,11,B,ALLOW,The comment expresses emotion but contains no personal attack or hate speech.,3,1
+149,16,comment,11,C,ALLOW,"The comment is an emotional expression without threats or hate speech, so it is allowed.",3,1
+150,17,post,0,A,WARN_AND_ALLOW,"강한 비판과 다소 무례한 표현이 있으나, 특정 인물에 대한 직접적인 욕설이나 모욕은 아니므로 경고 후 허용.",4,3
+150,17,post,0,B,WARN_AND_ALLOW,"강한 감정 표현과 다소 무례한 어투가 있으나, 특정 개인에 대한 직접적인 욕설은 아니므로 경고 후 허용.",4,3
+150,17,post,0,C,ALLOW,무례하고 감정적인 표현이 있으나 명백한 위협이나 혐오 표현이 없으므로 허용.,4,3
+151,17,comment,1,A,ALLOW,No personal insult or hate speech; the comment expresses frustration about noise without targeting a person.,3,2
+151,17,comment,1,B,ALLOW,"The comment criticizes a behavior (noise) without personal attack or hate speech, contributing mild emotional expression.",3,2
+151,17,comment,1,C,ALLOW,"The comment is a mild complaint with informal language but no threats or hate speech, so it is allowed.",3,2
+152,17,comment,2,A,ALLOW,"No insult, profanity, or hate speech detected; comment is neutral and short.",2,1
+152,17,comment,2,B,ALLOW,Comment is neutral and does not contain insults or hate speech.,2,1
+152,17,comment,2,C,ALLOW,"No threats, hate speech, or targeted insults present; expression is minimal and neutral.",2,1
+153,17,comment,3,A,ALLOW,"The comment is a neutral, single word without insult or criticism.",1,1
+153,17,comment,3,B,ALLOW,"No personal attack, hate speech, or threat present; comment is neutral.",1,1
+153,17,comment,3,C,ALLOW,"No insults, threats, or hate speech; comment is neutral and minimal.",1,1
+154,17,comment,4,A,ALLOW,Polite and neutral question without any insult or negative tone.,1,1
+154,17,comment,4,B,ALLOW,Neutral inquiry that does not contain insults or hate speech and contributes minimally to discussion.,1,1
+154,17,comment,4,C,ALLOW,"Simple, polite question with no offensive content or threats.",1,1
+155,17,comment,5,A,ALLOW,Polite or neutral comment without any insult or criticism.,1,1
+155,17,comment,5,B,ALLOW,Neutral comment with no criticism or offensive content.,1,1
+155,17,comment,5,C,ALLOW,"No offensive or threatening content, very minimal expression.",1,1
+156,17,comment,6,A,BLOCK,‘애들’이라는 표현과 ‘못 받은’ 가정교육이라는 문구가 특정 집단을 낮추고 비하하는 표현으로 간주되어 직접적인 모욕에 해당함.,4,3
+156,17,comment,6,B,WARN_AND_ALLOW,강한 비판과 다소 조롱 섞인 표현이 있으나 특정 개인에 대한 직접적 모욕이나 혐오 표현은 아님.,4,4
+156,17,comment,6,C,ALLOW,"비록 다소 조롱 섞인 표현과 강한 어조가 있으나 명백한 위협, 혐오, 도촬 등이 없으므로 허용함.",4,4
+157,17,comment,7,A,ALLOW,"Polite, neutral comment without insults or derogatory language.",1,2
+157,17,comment,7,B,ALLOW,No personal attack or hate speech; comment is neutral and relevant.,1,2
+157,17,comment,7,C,ALLOW,"No insults, threats, or hate speech; comment is mild and neutral.",1,2
+158,17,comment,8,A,ALLOW,The comment is neutral and polite with no insults or criticism.,1,1
+158,17,comment,8,B,ALLOW,"The comment contains no criticism, insults, or hate speech.",1,1
+158,17,comment,8,C,ALLOW,The comment is neutral and does not violate any rules.,1,1
+159,17,comment,9,A,BLOCK,"욕설('좆같이')이 포함되어 있으며, 이는 사람이나 행위를 비하하는 표현으로 매너 최우선 정책에 따라 차단 대상임.",5,1
+159,17,comment,9,B,WARN_AND_ALLOW,"욕설이 있으나 특정 개인 대상이 아니고, 시스템이나 정책에 대한 비판이 아니므로 강한 표현으로 경고 후 허용함.",5,1
+159,17,comment,9,C,WARN_AND_ALLOW,욕설과 거친 표현이 있으나 명확한 위협이나 혐오 표현이 아니므로 경고 후 허용함.,5,1
+160,18,post,0,A,ALLOW,"The comment is a humorous self-description without insults or hate speech, so it is allowed as a non-targeted joke.",2,2
+160,18,post,0,B,ALLOW,The comment contains no personal attacks or hate speech and contributes a lighthearted personal experience.,2,2
+160,18,post,0,C,ALLOW,"The comment is a casual, humorous remark without threats or hate speech, so it is allowed under minimal regulation.",2,2
+161,18,comment,1,A,ALLOW,"The comment is a neutral, mildly skeptical question without insult or profanity.",2,2
+161,18,comment,1,B,ALLOW,The comment expresses mild skepticism without personal attack or profanity.,2,2
+161,18,comment,1,C,ALLOW,"The comment is a mild, non-hostile question and does not violate any rules.",2,2
+162,18,comment,2,A,ALLOW,"No insulting, profane, or hateful content detected; comment is neutral.",1,1
+162,18,comment,2,B,ALLOW,"Comment contains no personal attacks, hate speech, or threats; neutral expression.",1,1
+162,18,comment,2,C,ALLOW,"No threats, hate speech, or targeted insults present; minimal content but allowed.",1,1
+163,18,comment,3,A,ALLOW,"The comment is a neutral statement without insults or derogatory language, so it is allowed under high protection policy.",2,3
+163,18,comment,3,B,ALLOW,No personal attack or hate speech present; the comment contributes to discussion about allocation order.,2,3
+163,18,comment,3,C,ALLOW,"The comment is a factual or experiential statement without threats or hate speech, so it is allowed.",2,3
+164,18,comment,4,A,ALLOW,"The comment is neutral and does not contain insults, profanity, or targeted criticism.",2,1
+164,18,comment,4,B,ALLOW,"No personal attack, hate speech, or threat is present; the comment is neutral.",2,1
+164,18,comment,4,C,ALLOW,The comment is brief and neutral without any hateful or threatening content.,2,1
+165,18,comment,5,A,ALLOW,Polite or neutral comment without any insult or criticism.,1,1
+165,18,comment,5,B,ALLOW,Neutral question that does not contain insults or hate speech.,1,1
+165,18,comment,5,C,ALLOW,"No insults, threats, or hate speech present; simple neutral inquiry.",1,1
+166,18,comment,6,A,BLOCK,전공고름은 특정 전공 학생들을 비하하는 직접적인 모욕 표현으로 간주되어 차단 대상임.,5,2
+166,18,comment,6,B,BLOCK,특정 전공 학생들을 향한 명백한 인신공격성 모욕 표현이므로 차단함.,5,2
+166,18,comment,6,C,WARN_AND_ALLOW,모욕적 표현이 있으나 명확한 위협이나 혐오발언은 아니므로 경고 후 허용함.,5,2
+167,18,comment,7,A,ALLOW,"The comment is a neutral, informal expression without insult or derogatory language.",2,1
+167,18,comment,7,B,ALLOW,"The comment does not contain personal attacks, hate speech, or threats and is a mild, neutral remark.",2,1
+167,18,comment,7,C,ALLOW,"The comment is a casual, non-threatening expression without insults or hate speech.",2,1
+168,19,post,0,A,ALLOW,"The comment is a personal reflection without insults or derogatory language, and it uses polite, introspective tone.",2,3
+168,19,post,0,B,ALLOW,"The comment expresses personal feelings and questions without insults or hate speech, contributing to discussion.",2,3
+168,19,post,0,C,ALLOW,"The comment is a personal, thoughtful reflection with no threats, insults, or hate speech.",2,3
+169,19,comment,1,A,ALLOW,"The comment is polite and neutral, expressing a personal approach without insults or derogatory language.",1,2
+169,19,comment,1,B,ALLOW,The comment is respectful and contributes a personal perspective without any profanity or personal attacks.,1,2
+169,19,comment,1,C,ALLOW,"The comment is a mild personal opinion with no threats, insults, or hate speech, fully allowed under minimal regulation.",1,2
+170,19,comment,2,A,ALLOW,"The comment is a neutral, philosophical statement without insults or derogatory language.",1,3
+170,19,comment,2,B,ALLOW,The comment is respectful and contributes a thoughtful perspective without any personal attacks or profanity.,1,3
+170,19,comment,2,C,ALLOW,"The comment is a neutral statement with no insults, threats, or hate speech, fully allowed under minimal regulation.",1,3
+171,19,comment,3,A,ALLOW,The comment is a neutral personal expression without insults or derogatory language.,2,2
+171,19,comment,3,B,ALLOW,"The comment expresses a personal feeling without direct insults or hate speech, contributing modestly to discussion.",2,2
+171,19,comment,3,C,ALLOW,"The comment is a mild personal statement with no threats or hate speech, fully allowed under minimal regulation.",2,2
+172,19,comment,4,A,ALLOW,"The comment is a neutral, casual analogy without insults or targeted criticism.",1,2
+172,19,comment,4,B,ALLOW,The comment expresses a personal feeling in a casual tone without insults or hate speech.,1,2
+172,19,comment,4,C,ALLOW,"The comment is a mild, informal expression without threats or hate speech.",1,2
+173,20,post,0,A,ALLOW,The comment is a neutral question without insults or offensive language.,1,2
+173,20,post,0,B,ALLOW,The comment is a polite inquiry contributing to discussion without any harassment or profanity.,1,2
+173,20,post,0,C,ALLOW,The comment is a neutral question with no offensive or threatening content.,1,2
+174,20,comment,1,A,ALLOW,"Polite, neutral question without insults or profanity.",1,2
+174,20,comment,1,B,ALLOW,Neutral comment that contributes to clarification without rudeness.,1,2
+174,20,comment,1,C,ALLOW,"No insults, threats, or hate speech; simple question.",1,2
+175,20,comment,2,A,ALLOW,"Polite, neutral question without any insult or harsh language.",1,2
+175,20,comment,2,B,ALLOW,Neutral inquiry contributing to discussion without any personal attack or profanity.,1,2
+175,20,comment,2,C,ALLOW,"No insults, threats, or hate speech; simple question allowed under minimal regulation.",1,2
+176,20,comment,3,A,ALLOW,Polite and neutral question without any insult or negative tone.,1,2
+176,20,comment,3,B,ALLOW,No personal attack or hate speech; a simple inquiry contributing to discussion.,1,2
+176,20,comment,3,C,ALLOW,Polite and neutral comment with no threats or hateful content.,1,2
+177,20,comment,4,A,ALLOW,Polite and neutral comment with no insults or criticism.,1,1
+177,20,comment,4,B,ALLOW,Polite expression without any criticism or insults.,1,1
+177,20,comment,4,C,ALLOW,Polite and neutral comment with no problematic content.,1,1
+178,20,comment,5,A,ALLOW,Polite and neutral question without any insult or negative tone.,1,1
+178,20,comment,5,B,ALLOW,Neutral and polite inquiry that contributes no harm or insult.,1,1
+178,20,comment,5,C,ALLOW,"No insults, threats, or hate speech; simple polite question.",1,1
+179,20,comment,6,A,ALLOW,The comment is a neutral statement about tuition and registration without insults or offensive language.,2,3
+179,20,comment,6,B,ALLOW,The comment provides information and opinion on tuition policy without personal attacks or profanity.,2,3
+179,20,comment,6,C,ALLOW,The comment is a straightforward expression about tuition and registration rules with no threats or hate speech.,2,3
+180,20,comment,7,A,ALLOW,Polite and neutral question without any insult or negative tone.,1,2
+180,20,comment,7,B,ALLOW,Polite inquiry contributing to information exchange without any offensive content.,1,2
+180,20,comment,7,C,ALLOW,"Completely polite and neutral, no issues under minimal regulation policy.",1,2
+181,20,comment,8,A,ALLOW,Polite and neutral comment without insults or profanity.,1,2
+181,20,comment,8,B,ALLOW,No personal attacks or hate speech; comment contributes relevant information.,1,2
+181,20,comment,8,C,ALLOW,"No threats, hate speech, or insults; comment is factual and neutral.",1,2
+182,20,comment,9,A,ALLOW,Polite and neutral comment with no insults or criticism.,1,1
+182,20,comment,9,B,ALLOW,Polite expression without any criticism or offensive content.,1,1
+182,20,comment,9,C,ALLOW,Polite comment with no offensive or threatening content.,1,1
