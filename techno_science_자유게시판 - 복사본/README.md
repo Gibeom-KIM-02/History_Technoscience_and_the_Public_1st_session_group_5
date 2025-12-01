@@ -10,6 +10,8 @@ _(공적영역과 테크노사이언스 · 게시판 댓글 규제 실험)_
 - **사람이 ‘이 경우엔 이렇게 처리하는 게 더 좋다’**라는 피드백을 남기면,
 - 그 피드백을 바탕으로 **정책 v2 초안을 다시 AI가 제안**하게 만들고,
 - 이 v2 정책을 다시 LLM 입력으로 넣어 **정책 결정 과정을 순환(iteration)** 시켜볼 수 있습니다.
+- 그리고, 사람 피드백과의 일치율을 기준으로 **A/B/C 중 어떤 정책을 “최종 정책 후보”로 선택할지**에 대해서도  
+  **통계 + LLM 추천**을 합쳐서 의사결정의 근거를 마련합니다.
 
 즉, 이 프로젝트는 **“AI가 정책을 대신 결정한다”**가 아니라,  
 **“정책 결정 과정을 설계하고 돌려보는 도구로 AI를 쓸 수 있는가?”**를 실험하는 데 목적이 있습니다.
@@ -30,7 +32,8 @@ project_root/
   │   ├─ disagreement_cases_with_text.csv     # 정책 간 불일치 + 원문 텍스트
   │   ├─ disagreement_with_human_template.csv # 사람이 라벨링할 템플릿
   │   ├─ disagreement_with_human_filled.csv   # 사람이 채운 피드백 (예시 이름)
-  │   └─ policy_v2_suggestions.md             # 사람 피드백 기반 v2 정책 초안
+  │   ├─ policy_v2_suggestions.md             # 사람 피드백 기반 v2 정책 초안 + LLM 추천
+  │   └─ (콘솔 출력) human–policy agreement summary  # 사람 vs A/B/C 일치율 통계
   └─ notebooks/
       ├─ 1_build_comments_from_raw.ipynb
       ├─ 2_policy_simulation_comments_schema.ipynb
@@ -44,9 +47,9 @@ project_root/
    → `1_build_comments_from_raw.ipynb`
 2. **A/B/C 정책을 이용한 LLM 시뮬레이션 → `comments_with_policy_results.csv`**  
    → `2_policy_simulation_comments_schema.ipynb`
-3. **정책별 결과 분석 & 불일치 케이스 추출**  
+3. **정책별 결과 분석 & 불일치 케이스 추출 → `disagreement_cases_with_text.csv`**  
    → `3_analysis_comments_results.ipynb`
-4. **사람 피드백 + 정책 설명 → v2 정책 초안 (`policy_v2_suggestions.md`)**  
+4. **사람 피드백 + 정책 설명 → v2 정책 초안 (`policy_v2_suggestions.md`) + A/B/C 중 최종 후보 추천**  
    → `4_policy_refinement_v1.ipynb`
 5. (선택) v2 정책을 다시 2번 노트북에 반영해 재시뮬레이션 → **정책 결정의 iterative loop**
 
@@ -159,7 +162,7 @@ LLM 시뮬레이션에 쓰기 좋은 **구조화된 CSV(`comments.csv`)**로 바
   - 대부분의 거친 언어는 `WARN_AND_ALLOW` 또는 `ALLOW`
   - 애매하면 **“표현의 자유”를 우선 → 최소 규제**
 
-이렇게 정책 철학을 분리해 두면,
+이렇게 정책 철학을 분리해 두면,  
 **“규제 강도에 따라 게시판 풍경이 얼마나 달라지는가?”**를 LLM을 통해 실험할 수 있습니다.
 
 ### LLM 프롬프트 구조
@@ -220,14 +223,14 @@ LLM 시뮬레이션에 쓰기 좋은 **구조화된 CSV(`comments.csv`)**로 바
    - `pivot_table`로 `sample_id` 별 `A/B/C` 결정 한 줄에 모으기
    - `nunique(axis=1) > 1` 인 경우만 필터링
    - 원래 `text`까지 같이 붙인 뒤
-   - `results/disagreement_cases_with_text.csv` 로 저장
+   - `results/disagreement_cases_with_text.csv`로 저장
 
 불일치 케이스는 **“정책의 성격 차이가 드러나는 흥미로운 사례 모음”**으로,  
 다음 단계인 **사람 피드백 + 정책 개선** 단계의 핵심 재료가 됩니다.
 
 ---
 
-## 4. 사람 피드백을 이용한 정책 v2 초안 만들기
+## 4. 사람 피드백을 이용한 정책 v2 초안 만들기 (+ 최종 정책 후보 추천)
 
 **노트북:** `4_policy_refinement_v1.ipynb`
 
@@ -237,10 +240,14 @@ LLM 시뮬레이션에 쓰기 좋은 **구조화된 CSV(`comments.csv`)**로 바
 
 > AI가 제안한 정책(A/B/C)과 시뮬레이션 결과를 보고,  
 > 사람이 개입해서 “이 경우엔 이렇게 처리하는 게 더 낫다”라고 피드백을 주고,  
-> **그 사람 피드백을 다시 LLM에 입력해서 정책 v2를 제안받는 과정**입니다.
+> **그 사람 피드백을 다시 LLM에 입력해서 정책 v2를 제안받는 과정**입니다.  
+> 그리고 동시에, 사람 라벨과 A/B/C 정책의 **일치율을 계산해서**  
+> “현재 iteration에서 A/B/C 중 무엇을 최종 후보로 삼을지”를 추천합니다.
 
 이 과정을 반복하면,  
 **정책 결정·수정·재적용의 iterative loop**를 AI와 사람이 함께 수행할 수 있습니다.
+
+---
 
 ### 4-1. 사람 피드백 템플릿 생성
 
@@ -262,6 +269,8 @@ LLM 시뮬레이션에 쓰기 좋은 **구조화된 CSV(`comments.csv`)**로 바
 - `results/disagreement_with_human_filled.csv`
 
 라는 파일 이름으로 저장합니다.
+
+---
 
 ### 4-2. 사람 피드백 + 정책 v1 설명 → v2 정책 제안
 
@@ -286,9 +295,55 @@ LLM 시뮬레이션에 쓰기 좋은 **구조화된 CSV(`comments.csv`)**로 바
      - BLOCK/WARN/ALLOW 기준
      - 2–3개의 예시 패턴(막아야 할 vs 허용해도 될 표현)을 포함
 
-5. LLM 응답을 그대로 `results/policy_v2_suggestions.md`에 저장
+5. LLM 응답을 그대로 `results/policy_v2_suggestions.md`에 저장  
+   → **사람+AI가 공동으로 만든 v2 정책 초안**에 해당합니다.
 
-이 파일은 **사람+AI가 공동으로 만든 v2 정책 초안**에 해당합니다.
+---
+
+### 4-3. 사람–정책 일치율 계산 & A/B/C 중 최종 후보 추천
+
+`4_policy_refinement_v1.ipynb`는 이제 다음 작업도 수행합니다.
+
+1. `disagreement_with_human_filled.csv`에서  
+   정책 A/B/C의 결정(`A`, `B`, `C` 컬럼)과 `human_preferred_decision`을 비교하여:
+
+   - Policy A: 사람 판단과 몇 건이 일치하는지
+   - Policy B: …
+   - Policy C: …
+   - 각각의 **정확도(일치 비율)**를 계산합니다.
+
+   예시 요약:
+
+   ```text
+   === Human–policy agreement summary ===
+   policy  n_match  n_total  accuracy
+   A       42       60       0.700
+   B       48       60       0.800
+   C       35       60       0.583
+   ```
+
+2. 이 통계에서 **가장 사람이랑 비슷한 정책**을 자동으로 뽑아:
+
+   - 예: `Policy B`가 사람 라벨과 가장 많이 일치  
+   - 콘솔에: `현재 사람 라벨과 가장 가까운 정책: Policy B (정확도 0.800)` 같이 표시
+
+3. 위 통계(`stats_block`)를 LLM 프롬프트에도 함께 전달합니다.  
+   LLM에게는 다음을 요구합니다.
+
+   - Policy A/B/C v2 텍스트를 제안할 뿐 아니라,
+   - 마지막에 **`Final recommendation`** 섹션을 추가해서:
+     - 통계 + 사례를 바탕으로
+     - “이번 iteration에서 A/B/C 중 어떤 것을 기본 정책 후보로 삼는 게 좋은지”  
+       2–4문장 정도로 추천하고, 이유를 설명하도록 합니다.
+
+즉, 이 노트북은:
+
+- **정량적인 기준**: 사람 vs 정책 일치율(accuracy)
+- **정성적인 기준**: LLM이 읽은 사례와 정책 철학
+
+을 함께 사용해서,  
+“지금 iteration 이후에는 **Policy X v2**를 기본 정책으로 채택해보자”라는  
+**최종 후보를 제안하는 보조 도구** 역할을 합니다.
 
 ---
 
@@ -314,10 +369,15 @@ LLM 시뮬레이션에 쓰기 좋은 **구조화된 CSV(`comments.csv`)**로 바
    - 정책이 어떻게 변화했는지,
    - 댓글 규제 풍경이 어떻게 달라졌는지,
    - 사람 피드백과의 불일치가 줄어들었는지를 계속 확인할 수 있습니다.
+6. 동시에, 각 iteration마다:
+   - 사람 vs A/B/C 일치율을 계산하고
+   - LLM이 제안하는 **Final recommendation**을 참고해서
+   - “이번 라운드에서는 Policy B v2를 메인으로 가져가자” 같은 식으로  
+     **최종 정책 후보를 선택**할 수 있습니다.
 
 이 전체 과정은:
 
-> **“정책 결정 → 적용 → 문제 케이스 수집 → 사람 판단 → 정책 수정 → 재적용”**  
+> **“정책 결정 → 적용 → 문제 케이스 수집 → 사람 판단 → 정책 수정 → 재적용 → (필요시) 최종 정책 후보 선택”**  
 
 이라는, 원래 민주적·공론장 설계에서 중요한 **피드백 루프**를  
 **AI와 LLM을 활용해서 보다 빠르게 실험할 수 있는 구조**로 만들려는 시도입니다.
@@ -332,12 +392,16 @@ LLM 시뮬레이션에 쓰기 좋은 **구조화된 CSV(`comments.csv`)**로 바
 - 그 정책을 **AI에게 설명해 시뮬레이션하도록 한 뒤**,
 - 사람이 개입해서 **정책의 문제점을 지적하고 수정 방향을 제시**하고,
 - 그 정보를 다시 AI에 넣어 **정책 v2를 생성**하고,
+- 각 iteration마다 **사람 vs 정책 일치율을 계산**해,
+  - A/B/C 중 **어떤 정책이 사람 판단과 가장 잘 맞는지**를 수치로 확인하고,
+  - LLM이 제안하는 **Final recommendation**을 참고하여  
+    “이번 라운드의 최종 정책 후보”를 선택할 수 있게 합니다.
 - 이 과정을 반복하면서 **정책 결정·수정의 순환(iteration)을 실험**합니다.
 
 즉,  
 **“댓글 규제에 AI를 어떻게 사용할 수 있는가?”**라는 질문에 대해,
 
 > - AI = **정책 집행자**가 아니라,  
-> - AI = **정책 실험과 학습을 도와주는 도구**  
+> - AI = **정책 실험과 학습, 그리고 최종 정책 선택을 도와주는 도구**  
 
 로 쓸 수 있다는 것을 보여주는 작은 프로토타입입니다.
