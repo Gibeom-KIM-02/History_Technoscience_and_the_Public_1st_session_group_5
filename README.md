@@ -192,7 +192,7 @@ LLM 시뮬레이션에 쓰기 좋은 **구조화된 CSV(`comments.csv`)**로 바
 
 ---
 
-## 3. 정책별 결과 분석
+## 3. 정책별 결과 분석 (+ tone–debate decision map)
 
 **노트북:** `3_analysis_comments_results.ipynb`
 
@@ -200,6 +200,8 @@ LLM 시뮬레이션에 쓰기 좋은 **구조화된 CSV(`comments.csv`)**로 바
 
 - 정책별로 **BLOCK / WARN_AND_ALLOW / ALLOW 비율**을 비교하고,
 - **tone_score / debate_value_score 평균값**을 비교하며,
+- **tone_score–debate_value_score 평면에서 각 정책이 어떤 영역을 BLOCK 하는지**를  
+  **decision map (scatter + BLOCK 확률 heatmap)** 으로 시각화하고,
 - **A/B/C가 서로 다른 판단을 내린 사례**를 모아 봅니다.
 
 이를 통해:
@@ -207,23 +209,32 @@ LLM 시뮬레이션에 쓰기 좋은 **구조화된 CSV(`comments.csv`)**로 바
 - “Policy A로 가면 어느 정도가 차단되는가?”
 - “Policy C는 얼마나 느슨한가?”
 - “특정 댓글에 대해 A는 BLOCK인데 C는 ALLOW인 사례가 얼마나 되는가?”
+- “각 정책이 tone/debate 기준으로 **어떤 구간을 사실상 ‘BLOCK 존’으로 보는지**”
 
 같은 질문에 답할 수 있습니다.
 
 ### 주요 분석 단계
 
-1. `comments.csv` + `comments_with_policy_results.csv` 로드 후 merge
-2. **정책별 결정 분포**:
-   - `groupby(["policy", "decision"])` → 카운트/퍼센트
+1. `comments.csv` + `comments_with_policy_results.csv` 로드 후 merge  
+2. **정책별 결정 분포**  
+   - `groupby(["policy", "decision"])` → 카운트/퍼센트  
    - matplotlib로 간단한 막대 그래프
-3. **정책별 평균 점수**:
-   - `groupby("policy")[["tone_score", "debate_value_score"]].mean()`
-   - 정책별로 “얼마나 공격적인 언어를 허용하고 있는지”, “토론 가치가 높은 댓글은 잘 살리고 있는지” 확인
-4. **정책 간 불일치 케이스 추출**:
-   - `pivot_table`로 `sample_id` 별 `A/B/C` 결정 한 줄에 모으기
-   - `nunique(axis=1) > 1` 인 경우만 필터링
-   - 원래 `text`까지 같이 붙인 뒤
-   - `results/disagreement_cases_with_text.csv`로 저장
+3. **정책별 평균 점수**  
+   - `groupby("policy")[["tone_score", "debate_value_score"]].mean()`  
+   - 정책별로 “얼마나 공격적인 언어를 허용하고 있는지”,  
+     “토론 가치가 높은 댓글은 잘 살리고 있는지” 확인
+4. **tone–debate decision map 시각화**  
+   - 각 row를 `(tone_score, debate_value_score)` 좌표 위에 올리고  
+     `decision`(BLOCK / WARN_AND_ALLOW / ALLOW)에 따라 마커를 달리한 **scatter plot** 생성  
+   - 같은 데이터를 이용해 `(tone, debate)` 셀마다  
+     `P(BLOCK | tone_score, debate_value_score)`를 계산해 **heatmap**으로 표현  
+   - 세 정책(A/B/C)의 heatmap을 나란히 두고 보면  
+     어느 정책이 어떤 영역을 더 강하게 BLOCK 하는지 한눈에 비교 가능
+5. **정책 간 불일치 케이스 추출**  
+   - `pivot_table`로 `sample_id` 별 `A/B/C` 결정을 한 줄에 모으기  
+   - `nunique(axis=1) > 1` 인 경우만 필터링  
+   - 원래 `text`까지 같이 붙인 뒤  
+     `results/disagreement_cases_with_text.csv`로 저장  
 
 불일치 케이스는 **“정책의 성격 차이가 드러나는 흥미로운 사례 모음”**으로,  
 다음 단계인 **사람 피드백 + 정책 개선** 단계의 핵심 재료가 됩니다.
