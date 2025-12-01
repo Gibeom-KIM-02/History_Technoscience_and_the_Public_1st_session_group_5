@@ -1,199 +1,171 @@
 ### Policy A v2 – High Protection, Low Tolerance (매너 최우선)
 
-**핵심 원칙 (요약)**  
-- 사람·집단에 대한 인신공격, 모욕 표현은 대부분 BLOCK  
-- 강한 욕설·비하가 섞인 표현은 대상이 사람/집단/작품이면 BLOCK, 제도·상황이면 WARN  
-- 아이디어·정책 비판은 허용하되, 표현 방식이 과도하면 경고  
-- 혐오발언·위협·신상공개는 무조건 BLOCK  
-- 애매하면 “정서적 안전”을 우선해 BLOCK 또는 WARN 쪽으로 결정  
+**Main principles**
 
-#### BLOCK 기준
-다음 중 하나라도 포함되면 BLOCK:
+- Strongly prioritize emotional safety over freedom of expression.
+- Block most content that includes insults, mocking, or aggressive tone toward people.
+- Treat ambiguous or borderline cases as at least WARN_AND_ALLOW, not ALLOW.
+- Allow only clearly polite, neutral, or gently critical comments.
 
-1. **직접적인 인신공격/모욕**
-   - 특정 개인, 강의자, 학생, 댓글 작성자, 소수 집단 등을 향한 욕설·비하:
-   - 예:  
-     - “저 새끼/년”, “병x”, “틀딱들 수준 봐라”, “저 교수는 인간이 아님”  
-     - “너 같은 애는 학교 오지 마라”, “정신병자냐”  
+**When to BLOCK**
 
-2. **사람·집단·그들의 작업물에 대한 심한 욕설**
-   - 욕설이 **명확히 특정 사람/집단/그 사람이 한 일**을 겨냥:
-   - 예: “저 교수 과제 진짜 ㅈ같다”, “니가 쓴 글 좆같다”, “저 과 동기들 다 미친놈들임”  
+Block if **any** of the following are present:
 
-3. **조롱·비하·수치심 유발**
-   - 외모, 배경, 학업능력, 정신건강, 경제적 상황 등을 낮춰보거나 조롱:
-   - 예: “그 얼굴로 발표 나서냐”, “지잡대 주제에”, “학점 저런 거 보면 머리 비었네”  
+- Direct insult, derogatory term, or curse toward:
+  - a person, group, or their work/effort  
+  - 예: “멍청이”, “병x”, “저년”, “틀딱”, “씨발 교수”, “좆같은 과제”.
+- Swearing or profanity **clearly tied to** a person, group, or their work:
+  - 예: “저 교수 또 ㅈ같이 하네”, “이 수업 진짜 ㅈ같이 만들어놨네”.
+- Sarcastic or mocking tone that targets character, ability, or identity:
+  - 예: “저 정도 머리로 대학은 어떻게 왔냐?”, “그 정도면 그냥 포기해라”.
+- Shaming of appearance, background, academic ability, or mental health.
+- Any hate speech or slur toward social groups (gender, region, race, sexuality, etc.).
+- Any threat, doxxing, or suggestion of harm (even if not explicit).
+- Repeated or intense hostile tone toward a specific individual or small group, even without explicit slurs.
 
-4. **혐오발언·차별 조장**
-   - 성별, 성적지향, 인종, 지역, 장애, 종교 등 보호집단에 대한 비하·욕설:
-   - 예: “여자는 원래 ~라서 안 된다”, “전라도는 다 ~”, “게이들은 역겹다”  
+**When to WARN_AND_ALLOW**
 
-5. **위협·신상공개·괴롭힘 선동**
-   - 폭력·자해·살해·성폭력 암시 또는 명시, 개인정보 노출, 집단 괴롭힘 유도:
-   - 예: “찾아가서 죽여버리자”, “이 사람 학번/이름은 ㅇㅇㅇ임”, “다 같이 신고 테러하자”  
+Warn and allow if:
 
-#### WARN_AND_ALLOW 기준
-다음은 **삭제까지는 아니지만, 매너 위반이 뚜렷한 경우**:
+- Strong criticism or emotional language mainly targeting **ideas, policies, classes, or institutions**, not people:
+  - 예: “이 수업 시스템 진짜 엉망이다”, “학사 행정이 너무 개판이다”.
+- Profanity or rude words used **generally** or toward non-personal targets:
+  - 예: “이런 제도는 진짜 ㅈ같다”, “등록금 너무 미친 거 아니냐”.
+- Mild sarcasm or frustration about public issues (등록금, 기숙사, 성적 정책 등) without naming or insulting individuals.
+- Borderline tone that feels harsh but does **not** clearly attack a person’s character or a protected group.
 
-1. **강한 감정 표현 + 제도/상황/아이디어 비판**
-   - 욕설·비속어가 있으나 **주 대상이 정책, 수업 방식, 행정, 시스템**인 경우:
-   - 예:  
-     - “등록금 이딴 식으로 쓰는 거 진짜 ㅈ같다”  
-     - “이 수강신청 시스템은 진짜 병맛이다”  
+**When to ALLOW**
 
-2. **거친 표현이 섞인 일반적/비인칭 비판**
-   - 특정 개인이 아닌 **막연한 집단·상황**을 향한 불만:
-   - 예: “요즘 수업들 다 수준 떨어지는 것 같음, 진짜 짜증난다”  
+Allow if:
 
-3. **가벼운 조롱·비꼼이 있으나 인신공격이 약한 경우**
-   - 예: “이 정책 만든 사람들 현실을 모르는 듯”, “이 공지 진짜 웃기네”  
+- Polite, neutral, or informational comments.
+- Constructive criticism with respectful language, even if clearly negative:
+  - 예: “수업 준비가 부족한 것 같아요. 자료를 더 공유해주시면 좋겠습니다.”
+- Jokes or slang that are:
+  - not targeted at specific people or groups,  
+  - not hateful, and  
+  - not clearly mocking someone’s traits.
 
-> 원칙: **욕설이 있고, 누군가 상처받을 수 있겠다 싶으면 최소 WARN**.  
-> 단, 위 BLOCK 항목(인신공격·혐오·위협 등)에 해당하면 반드시 BLOCK.
+**Example patterns**
 
-#### ALLOW 기준
-- 욕설·비속어가 없고, **사람을 직접 깎아내리지 않는** 비판·후기:
-  - 예: “수업 준비가 부족해 보였어요”, “과제가 많아서 힘들었습니다”  
-- 감정 표현이 있어도 **대상이 제도·정책·경험**이고, 표현이 비교적 온건:
-  - 예: “이 수업은 제 스타일이 아니었어요”, “운영 방식이 아쉬웠습니다”  
-- 가벼운 농담·슬랭이지만, 특정인/집단을 겨냥한 비하가 아닌 경우  
+- BLOCK: “저 교수 진짜 병x 같아”, “저년 얼굴만 봐도 짜증난다”.
+- WARN_AND_ALLOW: “이 과제량은 솔직히 너무 미친 거 아닌가요”, “학사팀 일처리 왜 이렇게 개판임”.
+- ALLOW: “이번 학기 수업 난이도가 너무 높게 느껴져요. 조정이 필요해 보입니다.”
 
 
 ---
 
 ### Policy B v2 – Balanced (매너와 토론의 균형)
 
-**핵심 원칙 (요약)**  
-- 명확한 인신공격·혐오·위협은 BLOCK  
-- 욕설·거친 표현이 있어도, **주 대상이 제도·정책·아이디어**면 주로 WARN  
-- 토론·정보 공유 가치가 있으면 가급적 ALLOW 또는 WARN  
-- 애매하면 “토론 가치”를 우선하되, 개인에 대한 공격이면 BLOCK  
+**Main principles**
 
-#### BLOCK 기준
-다음은 무조건 BLOCK:
+- Balance respectful manners with the value of open debate.
+- Never allow direct harassment, hate speech, or threats.
+- Prefer WARN_AND_ALLOW over BLOCK when the target is a policy, system, or public issue.
+- Allow more emotional or blunt criticism if it contributes to discussion and is not personal abuse.
 
-1. **명시적 인신공격**
-   - 특정 개인(학생, 교수, 댓글 작성자 등)을 욕설·비하로 지칭:
-   - 예: “너는 진짜 병x이다”, “저 새끼는 인간도 아님”  
+**When to BLOCK**
 
-2. **보호집단에 대한 혐오발언**
-   - 성별, 성적지향, 인종, 지역, 장애, 종교 등에 대한 욕설·비하:
-   - 예: “여자들은 다 멍청하다”, “전라도는 다 ~”, “장애인들은 민폐”  
+Block if **any** of the following:
 
-3. **폭력·자해·성폭력 위협, 신상공개, 괴롭힘 선동**
-   - 예: “찾아가서 패자”, “이 사람 학번은 ㅇㅇㅇ이니 알아서 해라”,  
-     “다 같이 이 사람 신고해서 학교에서 내쫓자”  
+- Direct, explicit personal attack to a specific individual or clearly identifiable small group using insults or slurs:
+  - 예: “너 진짜 멍청하다”, “그 조교는 병x임”, “저년은 사람도 아님”.
+- Hate speech toward protected/vulnerable groups (gender, sexuality, race, disability, region, etc.), including slurs or dehumanizing language:
+  - 예: “여자는 원래 ~라서 안 된다”, “저 지방 출신들은 다 수준 낮다”.
+- Explicit or implicit threats of violence, doxxing, or calls for harassment:
+  - 예: “찾아가서 한 대 치고 싶다”, “신상 까버리자”, “다 같이 가서 테러하자”.
+- Extremely degrading language that combines profanity and personal attack, even if not a protected group:
+  - 예: “저 새끼 인생 망해야 한다”, “죽어버려라” (명백한 해악 표현).
 
-4. **지속적·집단적 괴롭힘을 조장하는 표현**
-   - 예: “이 사람 글 올라오면 무조건 욕하자”, “이 과 애들은 다 왕따시켜야 함”  
+**When to WARN_AND_ALLOW**
 
-#### WARN_AND_ALLOW 기준
-다음은 **삭제보다는 경고 + 허용**이 적절한 경우:
+Warn and allow if:
 
-1. **강한 욕설·비속어 + 제도/정책/수업/아이디어 비판**
-   - 예:  
-     - “이 수업 과제량 진짜 미쳤다, 교수님 뭐 생각하시는지 모르겠음”  
-     - “등록금 이렇게 쓰는 거 보면 학교 운영이 개판이다”  
+- Strong, harsh expressions mainly targeting **ideas, policies, classes, or systems**, not individuals:
+  - 예: “이 수업 커리큘럼은 진짜 최악이다”, “학교 행정은 진짜 무능하다”.
+- Profanity present but:
+  - not clearly directed at a specific person’s character, and  
+  - mainly about experiences, systems, or general frustration.
+  - 예: “시험 범위가 너무 ㅈ같이 나왔다”, “이런 제도는 진짜 개같다”.
+- Mild to moderate sarcasm or mockery focused on public issues or widely-known institutions:
+  - 예: “등록금은 잘도 올리시네요, 서비스는 그대로인데”.
+- Comments that mix useful content with rough tone; there is some argument, explanation, or experience sharing.
 
-2. **욕설이 있지만, 대상이 불특정 다수/상황/경험인 경우**
-   - 예: “요즘 학교 분위기 진짜 개판이네”, “시험 난이도 진짜 ㅈ같았다”  
+**When to ALLOW**
 
-3. **가벼운 조롱·비꼼이 있으나, 인신공격이 핵심이 아닌 경우**
-   - 예: “이 공지 쓴 사람 현실 감각이 없나 싶다”,  
-     “이 정책 만든 사람들 책상 앞에서만 생각한 것 같음”  
+Allow if:
 
-4. **논리·경험 공유가 있으나 표현이 다소 공격적인 경우**
-   - 예: “이 수업은 솔직히 비효율적이라고 느꼈다. 과제가 방향성이 없다”  
+- Criticism is expressed in relatively respectful or neutral language, even if clearly negative:
+  - 예: “교수님의 설명이 이해하기 어려웠습니다. 예시를 더 들어주시면 좋겠습니다.”
+- Emotional expressions that are not direct harassment or hate speech:
+  - 예: “이번 학기 너무 힘들고 지친다”, “성적 보고 진짜 우울해졌다”.
+- Rude or blunt wording that is **general** and not aimed at a specific person or protected group:
+  - 예: “요즘 수업들 다 별로인 것 같다”, “학교 분위기가 진짜 별로임”.
+- Jokes, memes, or slang that may be edgy but do not target individuals or protected groups with abuse.
 
-> 원칙: 욕설/비속어가 눈에 띄면, **대상이 사람인지 제도인지 먼저 확인**.  
-> - 사람(개인/소수집단) 중심 공격 → BLOCK  
-> - 제도/정책/경험 중심 비판 → WARN_AND_ALLOW  
+**Example patterns**
 
-#### ALLOW 기준
-- **욕설·비속어가 거의 없고**, 비판이 주로 내용·경험에 초점:
-  - 예: “수업 난이도가 생각보다 높아서 힘들었습니다”,  
-    “과제가 많지만 배움은 있었습니다”  
-- 토론·정보 공유에 기여하는 후기·의견:
-  - 예: “이 과목은 팀플 비중이 커서 미리 팀워크를 생각해야 합니다”  
-- 감정 표현이 있어도, **상대방을 낮춰보지 않고 자신의 경험을 말하는 경우**:
-  - 예: “저는 이 정책이 불공정하다고 느꼈어요”  
+- BLOCK: “그 조교는 진짜 쓰레기야”, “저 장애인들은 다 민폐야”.
+- WARN_AND_ALLOW: “이 과제 정책은 진짜 개같다. 학생들 생각은 안 하나?”, “기숙사 규정은 너무 빡세서 미치겠다”.
+- ALLOW: “시험 난이도가 너무 높았던 것 같아요”, “학교 시스템이 답답하긴 한데 어쩔 수 없나 봐요”.
 
 
 ---
 
 ### Policy C v2 – Minimal Regulation, High Freedom (최소 규제, 표현의 자유 우선)
 
-**핵심 원칙 (요약)**  
-- 명백한 위협·신상공개·강한 혐오발언만 BLOCK  
-- 욕설·조롱·거친 표현 대부분은 WARN_AND_ALLOW로 허용  
-- 표현 수위보다 “위협성·혐오성·실질적 피해 가능성”을 우선 판단  
-- 애매하면 표현의 자유를 우선해 ALLOW 또는 WARN  
+**Main principles**
 
-#### BLOCK 기준
-다음과 같이 **실질적 피해 가능성이 크거나 명백히 혐오적인 경우만 BLOCK**:
+- Strongly favor freedom of expression; intervene only for clear harm.
+- Block only explicit threats, doxxing, or clearly hateful / extremely abusive content.
+- Treat most insults and profanity as WARN_AND_ALLOW rather than BLOCK.
+- Allow almost all criticism and emotional expression that is not clearly dangerous or hate-based.
 
-1. **명시적 폭력·성폭력·자해 유도 위협**
-   - 예: “너 죽여버릴 거야”, “찾아가서 패자”, “자살해라”  
+**When to BLOCK**
 
-2. **신상공개(doxxing) 및 괴롭힘 선동**
-   - 예: “이 사람 이름/학번/연락처는 ㅇㅇㅇ이다”,  
-     “다 같이 이 사람 SNS 가서 욕하자”  
+Block **only** when:
 
-3. **보호집단에 대한 노골적인 혐오발언**
-   - 인종·성별·성적지향·장애·지역 등 대상에 대한 **심각한 모욕·비인간화**:
-   - 예: “게이들은 인간도 아니다”, “여자는 때려야 말을 듣는다”  
+- Explicit threats of violence or serious harm, or doxxing / incitement to harassment:
+  - 예: “찾아가서 죽여버릴 거야”, “이 사람 주소 여기임, 다 같이 가자”.
+- Clear hate speech toward protected groups using abusive slurs or dehumanizing language:
+  - 예: “~들은 인간도 아니다”, “저 x같은 [소수자 비하 표현]들 다 없애야 한다”.
+- Severe, targeted abuse toward a specific identifiable person or very small group that:
+  - uses multiple strong slurs or dehumanizing language, **and**
+  - expresses clear hostility or desire for harm.
+  - 예: “저 새끼는 진짜 죽어야 한다, 인간 쓰레기다”.
 
-4. **특정 개인 또는 소수 인원에 대한 극단적 모욕 + 적대적 선동**
-   - 예: “저 교수는 쓰레기니까 다 같이 수업 보이콧해서 망하게 하자”  
-   - 단순 욕설 수준을 넘어, **집단적 공격을 조직·독려**하는 경우  
+**When to WARN_AND_ALLOW**
 
-#### WARN_AND_ALLOW 기준
-다음은 **불쾌할 수 있지만, 위협·혐오·신상공개 수준은 아닌 경우**:
+Warn and allow if:
 
-1. **욕설·비속어·조롱이 포함된 대부분의 표현**
-   - 대상이 사람, 집단, 제도 누구든, **위협이나 혐오가 아니면 기본 WARN**:
-   - 예:  
-     - “저 교수 수업 진짜 ㅈ같다”  
-     - “이 과 애들 다 멍청한 것 같음”  
-     - “이 정책 만든 사람들 머리가 있는지 의심됨”  
+- Harsh, emotional language with insults or profanity that is **not** an explicit threat and **not** hate speech:
+  - 예: “저 교수 진짜 개같다”, “그 조교 완전 멍청이 아님?”.
+- Rude mockery or name-calling that is uncomfortable but not clearly calling for harm:
+  - 예: “저 사람 말하는 거 보면 진짜 수준 떨어짐”.
+- Aggressive tone, repeated swearing, or personal jabs that stop short of threats or hate.
+- Very edgy jokes or memes that may be offensive but do not include threats, doxxing, or hate slurs.
 
-2. **거친 인신공격이지만, 폭력 선동·신상공개가 없는 경우**
-   - 예: “너 같은 애는 진짜 한심하다”, “저 사람은 수준 이하다”  
+**When to ALLOW**
 
-3. **불편한 농담·비꼼·과격한 비유**
-   - 예: “이 수업은 고문 수준이다”, “이 정책은 코미디다”  
+Allow if:
 
-> 원칙: 욕설·인신공격이 있어도,  
-> - **폭력/신상공개/강한 혐오**가 없으면 BLOCK까지는 하지 않고 WARN_AND_ALLOW.  
+- No explicit threats, no doxxing, no hate speech.
+- Any criticism of ideas, policies, institutions, or public figures, even if very rude:
+  - 예: “이 학교는 진짜 쓰레기 같다”, “정책 만든 사람들 다 무능한 것 같음”.
+- General venting or emotional outbursts:
+  - 예: “아 진짜 빡친다”, “이번 학기 망했다, 인생 최악”.
+- Mild or moderate insults in casual banter where there is no clear intent to seriously harm:
+  - 예: 친구 사이 농담 수준의 “야 너 왜 이렇게 게을러”.
 
-#### ALLOW 기준
-- 욕설·비속어가 없거나 매우 약하고, **의견·경험 중심**인 경우:
-  - 예: “이 수업은 비효율적이라고 느꼈습니다”,  
-    “정책이 불공정하다고 생각합니다”  
-- 논리·정보·경험 공유 위주의 비판:
-  - 예: “시험 범위 공지가 늦어서 준비가 어려웠습니다”  
-- 다소 날카로운 비판이라도, **인신공격·혐오·위협이 없는 경우**:
-  - 예: “이 정책은 현실을 충분히 반영하지 못한 것 같습니다”  
+**Example patterns**
+
+- BLOCK: “저 [소수자 비하 표현]들 다 죽여야 한다”, “이 사람 집 주소 여기니까 가서 응징하자”.
+- WARN_AND_ALLOW: “저 교수는 진짜 병x 같음”, “그 학생 발표는 수준이 쓰레기였다”.
+- ALLOW: “이 수업 진짜 별로다, 다시는 듣고 싶지 않음”, “학교가 학생들 생각을 전혀 안 하는 것 같다”.
 
 
 ---
 
-### 요약 – v1 대비 조정 방향
+### Final recommendation
 
-- **Policy A**:  
-  - “사람·집단·그들의 작업물”을 향한 욕설·모욕은 거의 전부 BLOCK으로 명시  
-  - 제도·정책·상황을 향한 욕설은 WARN_AND_ALLOW로 분리해, 불필요한 BLOCK 감소  
-
-- **Policy B**:  
-  - “대상이 사람인지, 제도/아이디어인지”를 기준으로 BLOCK vs WARN을 더 명확히 구분  
-  - 욕설이 있어도 토론 가치가 있으면 WARN_AND_ALLOW로 허용하는 경향 강화  
-
-- **Policy C**:  
-  - BLOCK 범위를 “위협·신상공개·강한 혐오·집단적 공격 선동”으로 좁게 정의  
-  - 대부분의 욕설·조롱은 WARN_AND_ALLOW로 수용해, 표현의 자유를 극대화  
-
-이렇게 조정하면,  
-- A는 여전히 가장 엄격하지만, **정책/제도 비판**은 더 자주 WARN,  
-- B는 **직접 인신공격·혐오만 BLOCK**, 나머지는 WARN/ALLOW,  
-- C는 **실질적 피해 위험이 큰 경우만 BLOCK**하고, 나머지는 대부분 허용하는 방향을 유지하면서,  
-주어진 인간 판정(특히 BLOCK과 WARN/ALLOW의 경계)에 더 잘 맞출 수 있습니다.
+Policy B v2 should be the default final policy. It already has the highest agreement with human judgments (0.56 vs. 0.40 for A and 0.00 for C) and its philosophy—blocking clear harassment and hate while preserving strong criticism of policies—matches the feedback pattern where humans often preferred ALLOW or WARN_AND_ALLOW over BLOCK for non-personal harsh comments. Policy B v2 keeps this balance but clarifies thresholds so that direct personal abuse is consistently blocked, while robust debate about systems and policies remains possible.
